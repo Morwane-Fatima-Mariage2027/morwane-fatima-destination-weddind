@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Morwane & Fatima | Destination Wedding</title>
+
+  <meta name="description" content="Morwane & Fatima — Destination Wedding à Marrakech, les 25 et 26 mai 2027">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #40362e;
+      background: #f8f4ed;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      padding: 40px 20px;
+      color: white;
+
+      background:
+        linear-gradient(
+          rgba(48, 38, 30, 0.40),
+          rgba(48, 38, 30, 0.40)
+        ),
+        url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=2200&q=85')
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .small-title {
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(65px, 12vw, 125px);
+      line-height: 0.88;
+      margin-bottom: 30px;
+    }
+
+    .hero-location {
+      font-size: 14px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    .hero-date {
+      margin-top: 25px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    .scroll {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      text-align: center;
+      padding: 18px 10px;
+      background: rgba(248, 244, 237, 0.97);
+      border-bottom: 1px solid #e4dbcf;
+    }
+
+    nav a {
+      color: #4b4037;
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 0 12px;
+    }
+
+    nav a:hover {
+      color: #a27d58;
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 95px 25px;
+    }
+
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #a27d58;
+      margin-bottom: 15px;
+    }
+
+    section h2 {
+      font-size: 58px;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .intro p {
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 18px;
+    }
+
+    /* =========================
+       PROGRAMME
+    ========================= */
+
+    .programme-section {
+      max-width: none;
+      background: #eee7dc;
+    }
+
+    .programme-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 95px 25px;
+      text-align: center;
+    }
+
+    .day {
+      margin-top: 60px;
+      text-align: left;
+    }
+
+    .day-header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .day-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      color: #a27d58;
+    }
+
+    .day-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 50px;
+      line-height: 1;
+      margin-top: 5px;
+    }
+
+    .day-date {
+      margin-top: 10px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .timeline {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .event {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 25px;
+      padding: 25px 0;
+      border-bottom: 1px solid #d9cfc2;
+    }
+
+    .event-time {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      color: #a27d58;
+    }
+
+    .event h3 {
+      font-size: 29px;
+      margin-bottom: 5px;
+    }
+
+    .event p {
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    .free-time {
+      background: #f8f4ed;
+      padding: 25px;
+      margin: 25px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* =========================
+       TRADITIONAL CLOTHING
+    ========================= */
+
+    .tradition-box {
+      max-width: 800px;
+      margin: 60px auto 0;
+      padding: 45px 35px;
+      border: 1px solid #d8cbbb;
+      text-align: center;
+      background: #f8f4ed;
+    }
+
+    .tradition-box h3 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .tradition-box p {
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    /* =========================
+       CULTURE
+    ========================= */
+
+    .culture {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .culture-image {
+      min-height: 530px;
+
+      background:
+        url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1300&q=85')
+        center/cover no-repeat;
+    }
+
+    .culture-text p {
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    /* =========================
+       RSVP
+    ========================= */
+
+    .rsvp-section {
+      max-width: none;
+      background: #40352c;
+      color: white;
+      text-align: center;
+    }
+
+    .rsvp-inner {
+      max-width: 750px;
+      margin: auto;
+      padding: 95px 25px;
+    }
+
+    .rsvp-section .eyebrow {
+      color: #d3b58f;
+    }
+
+    .rsvp-section h2 {
+      font-size: 62px;
+    }
+
+    .rsvp-section p {
+      font-size: 14px;
+      font-weight: 300;
+      margin: 20px 0 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 35px;
+      border: 1px solid #d3b58f;
+      color: white;
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .button:hover {
+      background: #d3b58f;
+      color: #40352c;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      text-align: center;
+      background: #2d2722;
+      color: white;
+      padding: 55px 20px;
+    }
+
+    footer h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 750px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 65px;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+
+      section h2 {
+        font-size: 46px;
+      }
+
+      .day-title {
+        font-size: 43px;
+      }
+
+      .event {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .culture {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .culture-image {
+        min-height: 400px;
+      }
+
+      .rsvp-section h2 {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <div class="small-title">
+        Destination Wedding
+      </div>
+
+      <h1>
+        Morwane<br>&amp;<br>Fatima
+      </h1>
+
+      <div class="hero-location">
+        Marrakech · Morocco
+      </div>
+
+      <div class="hero-date">
+        25 &amp; 26 May 2027
+      </div>
+
+    </div>
+
+    <div class="scroll">
+      Discover our celebration ↓
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
+
+  <nav>
+    <a href="#story">Notre histoire</a>
+    <a href="#programme">Programme</a>
+    <a href="#culture">Notre culture</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+
+
+  <!-- =========================
+       INTRO
+  ========================= -->
+
+  <section id="story" class="intro">
+
+    <div class="eyebrow">
+      Our story
+    </div>
+
+    <h2>
+      Une nouvelle aventure commence
+    </h2>
+
+    <p>
+      Après toutes ces années à écrire notre histoire à deux,
+      nous avons choisi de célébrer notre amour entourés de
+      nos familles et de nos proches, sous le soleil de Marrakech.
+    </p>
+
+    <p>
+      Pendant deux jours, nous vous invitons à partager avec nous
+      notre amour, notre culture et les traditions qui nous sont chères.
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       PROGRAMME
+  ========================= -->
+
+  <div class="programme-section" id="programme">
+
+    <div class="programme-inner">
+
+      <div class="eyebrow">
+        The celebration
+      </div>
+
+      <h2>
+        Deux jours à Marrakech
+      </h2>
+
+
+      <!-- DAY 1 -->
+
+      <div class="day">
+
+        <div class="day-header">
+
+          <div class="day-number">
+            01
+          </div>
+
+          <div class="day-title">
+            Soirée traditionnelle Touareg
+          </div>
+
+          <div class="day-date">
+            Mardi 25 mai 2027
+          </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+          <div class="event">
+
+            <div class="event-time">
+              Matin
+            </div>
+
+            <div>
+
+              <h3>
+                Henné de la mariée
+              </h3>
+
+              <p>
+                Un moment privilégié autour de Fatima,
+                entourée de ses amies et des femmes qui
+                souhaitent partager cette tradition avec elle.
+              </p>
+
+              <p style="margin-top:12px;">
+                Les invitées qui souhaitent faire du henné
+                avec la mariée pourront nous l'indiquer
+                lors de leur RSVP.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="free-time">
+
+            <strong>
+              Journée libre
+            </strong>
+
+            <br>
+
+            Aucun déjeuner n'est organisé.
+            Chacun est libre de déjeuner où il le souhaite,
+            dans son hébergement, au restaurant ou ailleurs.
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              18h00
+            </div>
+
+            <div>
+
+              <h3>
+                Henné traditionnel du marié
+              </h3>
+
+              <p>
+                Une cérémonie traditionnelle du henné du marié,
+                selon une tradition Touareg que nous sommes
+                heureux de vous faire découvrir.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              Dès 18h00
+            </div>
+
+            <div>
+
+              <h3>
+                Arrivée des invités
+              </h3>
+
+              <p>
+                Les invités commencent à arriver
+                et rejoignent progressivement la célébration.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              Soirée
+            </div>
+
+            <div>
+
+              <h3>
+                La soirée Touareg
+              </h3>
+
+              <p>
+                Une soirée placée sous le signe de notre culture :
+                musique, guitare, traditions et convivialité.
+              </p>
+
+              <p style="margin-top:12px;">
+                Au menu : couscous, viande, riz et thé,
+                dans une ambiance traditionnelle Touareg.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              Plus tard
+            </div>
+
+            <div>
+
+              <h3>
+                Tadwat
+              </h3>
+
+              <p>
+                Nous vous présenterons également la tradition
+                <strong>Tadwat</strong>, une cérémonie traditionnelle
+                liée à la nuit de noces chez les Touaregs.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              Vers 00h00
+            </div>
+
+            <div>
+
+              <h3>
+                Fin de la soirée
+              </h3>
+
+              <p>
+                La soirée prendra fin autour de minuit afin
+                que chacun puisse regagner tranquillement
+                son hébergement.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="tradition-box">
+
+          <h3>
+            Tenue traditionnelle
+          </h3>
+
+          <p>
+            Pour celles et ceux qui souhaitent vivre pleinement
+            l'expérience, il sera possible de commander une tenue
+            traditionnelle Touareg.
+          </p>
+
+          <p style="margin-top:12px;">
+            Cette tenue est entièrement facultative et restera
+            à la charge de chaque invité qui souhaite en commander une.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- DAY 2 -->
+
+      <div class="day">
+
+        <div class="day-header">
+
+          <div class="day-number">
+            02
+          </div>
+
+          <div class="day-title">
+            Le grand jour
+          </div>
+
+          <div class="day-date">
+            Mercredi 26 mai 2027
+          </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+          <div class="free-time">
+
+            <strong>
+              Matin &amp; midi — Temps libre
+            </strong>
+
+            <br>
+
+            Aucune activité ni déjeuner organisé.
+            Profitez de votre matinée à votre rythme
+            avant de nous retrouver pour la célébration.
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              18h00
+            </div>
+
+            <div>
+
+              <h3>
+                Cocktail
+              </h3>
+
+              <p>
+                Rendez-vous à Marrakech pour débuter
+                la soirée autour d'un cocktail.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              Ensuite
+            </div>
+
+            <div>
+
+              <h3>
+                Cérémonie laïque
+              </h3>
+
+              <p>
+                Nous nous retrouverons pour célébrer
+                officiellement notre union entourés
+                de ceux que nous aimons.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              Soirée
+            </div>
+
+            <div>
+
+              <h3>
+                Dîner &amp; célébration
+              </h3>
+
+              <p>
+                Dîner servi à table, musique, DJ,
+                danse et célébration jusqu'à la fin de la soirée.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="event">
+
+            <div class="event-time">
+              À venir
+            </div>
+
+            <div>
+
+              <h3>
+                Jeux &amp; animations
+              </h3>
+
+              <p>
+                Des jeux et quelques surprises viendront
+                compléter cette deuxième soirée.
+              </p>
+
+              <p style="margin-top:12px;">
+                Programme à découvrir prochainement.
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       CULTURE
+  ========================= -->
+
+  <section id="culture" class="culture">
+
+    <div class="culture-image"></div>
+
+    <div class="culture-text">
+
+      <div class="eyebrow">
+        Our heritage
+      </div>
+
+      <h2>
+        À la découverte de notre culture
+      </h2>
+
+      <p>
+        Ces deux journées seront aussi l'occasion
+        de vous faire découvrir une partie de notre
+        culture et de nos traditions Touareg.
+      </p>
+
+      <p>
+        Certaines traditions seront expliquées,
+        d'autres seront simplement vécues ensemble.
+        Et quelques surprises resteront à découvrir
+        directement sur place.
+      </p>
+
+      <p>
+        Nous avons hâte de partager ces moments
+        avec vous.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       RSVP
+  ========================= -->
+
+  <section id="rsvp" class="rsvp-section">
+
+    <div class="rsvp-inner">
+
+      <div class="eyebrow">
+        Join us
+      </div>
+
+      <h2>
+        Serez-vous des nôtres ?
+      </h2>
+
+      <p>
+        Nous avons hâte de vous retrouver à Marrakech
+        pour célébrer ensemble ces deux journées uniques.
+      </p>
+
+      <a href="#" class="button">
+        Confirmer ma présence
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <h2>
+      Morwane &amp; Fatima
+    </h2>
+
+    <p>
+      Destination Wedding · Marrakech · 25 &amp; 26 May 2027
+    </p>
+
+  </footer>
+
+</body>
+</html>
