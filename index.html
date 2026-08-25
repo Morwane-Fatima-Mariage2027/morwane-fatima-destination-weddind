@@ -973,6 +973,90 @@ footer p {
 
 <section id="rsvp" class="rsvp">
 
+  <style>
+    .rsvp-form {
+      max-width: 760px;
+      margin: 40px auto 0;
+      text-align: left;
+    }
+
+    .rsvp-form fieldset {
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 24px;
+      margin: 0 0 24px;
+      border-radius: 14px;
+    }
+
+    .rsvp-form legend {
+      font-size: 18px;
+      letter-spacing: 1px;
+      padding: 0 10px;
+    }
+
+    .rsvp-form label {
+      display: block;
+      margin: 16px 0 7px;
+    }
+
+    .rsvp-form input,
+    .rsvp-form select,
+    .rsvp-form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px 14px;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      color: inherit;
+      font: inherit;
+    }
+
+    .rsvp-form textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .rsvp-options {
+      margin-top: 12px;
+    }
+
+    .rsvp-options label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .rsvp-options input {
+      width: auto;
+    }
+
+    .rsvp-note {
+      font-size: 13px;
+      opacity: 0.8;
+      margin-top: 8px;
+    }
+
+    .rsvp-submit {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      padding: 16px 24px;
+      border-radius: 8px;
+      font: inherit;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .rsvp-success {
+      display: none;
+      margin-top: 25px;
+      padding: 22px;
+      border-radius: 12px;
+      text-align: center;
+    }
+  </style>
+
   <div class="rsvp-inner">
 
     <div class="eyebrow">
@@ -988,11 +1072,690 @@ footer p {
       pour célébrer ensemble ces deux journées uniques.
     </p>
 
-    <a href="#" class="button">
-      Confirmer ma présence
-    </a>
+    <form
+      id="wedding-rsvp-form"
+      class="rsvp-form"
+      action="https://formspree.io/f/xeajyaqe"
+      method="POST"
+    >
+
+      <input type="hidden" name="_subject" value="💍 Nouveau RSVP — Morwane & Fatima">
+
+      <!-- 01 — INFORMATIONS -->
+      <fieldset>
+        <legend>01 — Vos informations</legend>
+
+        <label for="prenom">Prénom *</label>
+        <input id="prenom" name="prenom" type="text" required>
+
+        <label for="nom">Nom *</label>
+        <input id="nom" name="nom" type="text" required>
+
+        <label for="email">Adresse e-mail *</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="whatsapp">Numéro de téléphone / WhatsApp *</label>
+        <input id="whatsapp" name="whatsapp" type="tel" required>
+
+        <label for="ville">Ville et pays de résidence</label>
+        <input id="ville" name="ville_pays" type="text">
+
+        <label>Viendrez-vous accompagné(e) ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="accompagnement" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="accompagnement" value="Non">
+            Non
+          </label>
+        </div>
+
+        <label for="accompagnant">
+          Prénom et nom de votre accompagnant(e)
+        </label>
+        <input id="accompagnant" name="accompagnant" type="text">
+
+        <label for="adultes">
+          Nombre total d'adultes
+        </label>
+        <input id="adultes" name="nombre_adultes" type="number" min="0" value="1">
+
+        <label for="enfants">
+          Nombre total d'enfants
+        </label>
+        <input id="enfants" name="nombre_enfants" type="number" min="0" value="0">
+      </fieldset>
+
+
+      <!-- 02 — PRÉSENCE -->
+      <fieldset>
+        <legend>02 — Votre présence ❤️</legend>
+
+        <label>Serez-vous présent(e) ? *</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="presence" value="Oui, avec grand plaisir ❤️" required>
+            Oui, avec grand plaisir ❤️
+          </label>
+
+          <label>
+            <input type="radio" name="presence" value="Non, malheureusement">
+            Non, malheureusement
+          </label>
+        </div>
+
+        <label>Quels moments souhaitez-vous partager avec nous ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="checkbox" name="moments[]" value="Bienvenue">
+            Journée / soirée de bienvenue
+          </label>
+
+          <label>
+            <input type="checkbox" name="moments[]" value="Cérémonie et réception">
+            Cérémonie et réception
+          </label>
+
+          <label>
+            <input type="checkbox" name="moments[]" value="Brunch BBQ">
+            Journée brunch / BBQ
+          </label>
+
+          <label>
+            <input type="checkbox" name="moments[]" value="Tous les événements">
+            Tous les événements
+          </label>
+        </div>
+
+        <label for="arrivee">
+          Date d'arrivée à Marrakech
+        </label>
+        <input id="arrivee" name="date_arrivee" type="date">
+
+        <label for="depart">
+          Date de départ de Marrakech
+        </label>
+        <input id="depart" name="date_depart" type="date">
+      </fieldset>
+
+
+      <!-- 03 — VOYAGE -->
+      <fieldset>
+        <legend>03 — Votre voyage ✈️</legend>
+
+        <label>Comment arriverez-vous à Marrakech ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="arrivee_par" value="Avion">
+            Avion
+          </label>
+
+          <label>
+            <input type="radio" name="arrivee_par" value="Voiture">
+            Voiture
+          </label>
+
+          <label>
+            <input type="radio" name="arrivee_par" value="Autre">
+            Autre
+          </label>
+        </div>
+
+        <label for="depart-ville">
+          Ville de départ
+        </label>
+        <input id="depart-ville" name="ville_depart" type="text">
+
+        <label for="heure-arrivee">
+          Heure approximative d'arrivée
+        </label>
+        <input id="heure-arrivee" name="heure_arrivee" type="time">
+
+        <label for="vol">
+          Numéro de vol, si vous le connaissez
+        </label>
+        <input id="vol" name="numero_vol" type="text">
+
+        <label>Aurez-vous besoin d'aide pour votre arrivée ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="aide_arrivee" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="aide_arrivee" value="Non">
+            Non
+          </label>
+
+          <label>
+            <input type="radio" name="aide_arrivee" value="Je ne sais pas encore">
+            Je ne sais pas encore
+          </label>
+        </div>
+
+        <label>Si oui :</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="checkbox" name="aide_transport[]" value="Transfert aéroport">
+            Transfert depuis l'aéroport
+          </label>
+
+          <label>
+            <input type="checkbox" name="aide_transport[]" value="Informations transports">
+            Informations sur les transports
+          </label>
+
+          <label>
+            <input type="checkbox" name="aide_transport[]" value="Autre">
+            Autre
+          </label>
+        </div>
+      </fieldset>
+
+
+      <!-- 04 — HÉBERGEMENT -->
+      <fieldset>
+        <legend>04 — Votre hébergement 🏨</legend>
+
+        <label>Avez-vous déjà réservé votre logement ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="hebergement_reserve" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="hebergement_reserve" value="Non">
+            Non
+          </label>
+
+          <label>
+            <input type="radio" name="hebergement_reserve" value="Je cherche encore">
+            Je suis encore en train de chercher
+          </label>
+        </div>
+
+        <label>Souhaitez-vous recevoir nos recommandations de logements proches du lieu du mariage ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="recommandations_logement" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="recommandations_logement" value="Non">
+            Non
+          </label>
+        </div>
+
+        <label>Quel type de logement recherchez-vous ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="checkbox" name="type_logement[]" value="Hôtel">
+            Hôtel
+          </label>
+
+          <label>
+            <input type="checkbox" name="type_logement[]" value="Villa">
+            Villa
+          </label>
+
+          <label>
+            <input type="checkbox" name="type_logement[]" value="Appartement">
+            Appartement
+          </label>
+
+          <label>
+            <input type="checkbox" name="type_logement[]" value="Peu importe">
+            Peu importe
+          </label>
+        </div>
+
+        <label for="budget-logement">
+          Budget approximatif par nuit
+        </label>
+
+        <select id="budget-logement" name="budget_logement">
+          <option value="">Sélectionner</option>
+          <option value="Moins de 50 €">Moins de 50 €</option>
+          <option value="50 à 100 €">50 à 100 €</option>
+          <option value="100 à 150 €">100 à 150 €</option>
+          <option value="Plus de 150 €">Plus de 150 €</option>
+          <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+        </select>
+
+        <label for="preference-logement">
+          Préférence concernant l'emplacement ou le logement
+        </label>
+        <textarea id="preference-logement" name="preference_logement"></textarea>
+      </fieldset>
+
+
+      <!-- 05 — ALIMENTATION -->
+      <fieldset>
+        <legend>05 — Alimentation & allergies 🍽️</legend>
+
+        <label>Avez-vous une allergie alimentaire ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="allergie" value="Non">
+            Non
+          </label>
+
+          <label>
+            <input type="radio" name="allergie" value="Oui">
+            Oui
+          </label>
+        </div>
+
+        <label for="allergies-details">
+          Si oui, laquelle / lesquelles ?
+        </label>
+        <textarea id="allergies-details" name="allergies_details"></textarea>
+
+        <label>Régime alimentaire particulier</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="checkbox" name="regime[]" value="Aucun">
+            Aucun
+          </label>
+
+          <label>
+            <input type="checkbox" name="regime[]" value="Halal">
+            Halal
+          </label>
+
+          <label>
+            <input type="checkbox" name="regime[]" value="Végétarien">
+            Végétarien
+          </label>
+
+          <label>
+            <input type="checkbox" name="regime[]" value="Végétalien">
+            Végétalien
+          </label>
+
+          <label>
+            <input type="checkbox" name="regime[]" value="Sans gluten">
+            Sans gluten
+          </label>
+
+          <label>
+            <input type="checkbox" name="regime[]" value="Sans lactose">
+            Sans lactose
+          </label>
+
+          <label>
+            <input type="checkbox" name="regime[]" value="Autre">
+            Autre
+          </label>
+        </div>
+
+        <label for="aliments-refuses">
+          Y a-t-il des aliments que vous ne mangez pas ?
+        </label>
+        <textarea id="aliments-refuses" name="aliments_non_manges"></textarea>
+
+        <label for="aliments-preferes">
+          Y a-t-il des aliments que vous appréciez particulièrement ?
+        </label>
+        <textarea id="aliments-preferes" name="aliments_preferes"></textarea>
+      </fieldset>
+
+
+      <!-- 06 — ENFANTS -->
+      <fieldset>
+        <legend>06 — Pour les enfants 👧🏽👦🏽</legend>
+
+        <p>
+          Si vous venez avec des enfants, nous aimerions également préparer leur accueil au mieux.
+        </p>
+
+        <label for="details-enfants">
+          Pour chaque enfant : prénom, âge, allergies, alimentation particulière et aliments qu'il/elle ne mange pas
+        </label>
+
+        <textarea
+          id="details-enfants"
+          name="details_enfants"
+          placeholder="Exemple : Adam — 6 ans — aucune allergie — ne mange pas de poisson."
+        ></textarea>
+
+        <label>Souhaite(nt)-il(s) bénéficier d'un menu enfant ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="menu_enfant" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="menu_enfant" value="Non">
+            Non
+          </label>
+        </div>
+
+        <label for="activites-enfants">
+          Informations utiles concernant les enfants
+        </label>
+
+        <textarea
+          id="activites-enfants"
+          name="besoins_enfants"
+          placeholder="Âges, activités qu'ils aiment, besoin particulier, etc."
+        ></textarea>
+      </fieldset>
+
+
+      <!-- 07 — TENUES -->
+      <fieldset>
+        <legend>07 — Dress code & tenues 👗</legend>
+
+        <label>Souhaitez-vous porter une tenue traditionnelle ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="tenue_traditionnelle" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="tenue_traditionnelle" value="Non">
+            Non
+          </label>
+
+          <label>
+            <input type="radio" name="tenue_traditionnelle" value="Je ne sais pas encore">
+            Je ne sais pas encore
+          </label>
+        </div>
+
+        <label>Pour les moments traditionnels :</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="checkbox" name="tenue_moment_traditionnel[]" value="Tenue Touareg">
+            Tenue Touareg
+          </label>
+
+          <label>
+            <input type="checkbox" name="tenue_moment_traditionnel[]" value="Tenue traditionnelle de ma culture">
+            Tenue traditionnelle de ma culture
+          </label>
+
+          <label>
+            <input type="checkbox" name="tenue_moment_traditionnel[]" value="Tenue élégante">
+            Tenue élégante
+          </label>
+        </div>
+
+        <label for="taille-tenue">
+          Taille pour une éventuelle tenue traditionnelle
+        </label>
+        <input id="taille-tenue" name="taille_tenue" type="text">
+
+        <label>Souhaitez-vous recevoir des inspirations concernant le dress code ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="inspirations_dresscode" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="inspirations_dresscode" value="Non">
+            Non
+          </label>
+        </div>
+      </fieldset>
+
+
+      <!-- 08 — HENNÉ -->
+      <fieldset>
+        <legend>08 — Moment henné 🌿</legend>
+
+        <p>
+          Le 25 mai, les invitées qui le souhaitent pourront partager un moment de henné avec Fatima.
+        </p>
+
+        <label>Souhaitez-vous participer au henné avec Fatima ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="henne" value="Oui">
+            Oui, avec plaisir ❤️
+          </label>
+
+          <label>
+            <input type="radio" name="henne" value="Non">
+            Non
+          </label>
+
+          <label>
+            <input type="radio" name="henne" value="Je ne sais pas encore">
+            Je ne sais pas encore
+          </label>
+        </div>
+      </fieldset>
+
+
+      <!-- 09 — BOISSONS -->
+      <fieldset>
+        <legend>09 — Boissons 🥂</legend>
+
+        <label>Quelles boissons préférez-vous ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="checkbox" name="boissons[]" value="Cocktails avec alcool">
+            Cocktails avec alcool
+          </label>
+
+          <label>
+            <input type="checkbox" name="boissons[]" value="Vin">
+            Vin
+          </label>
+
+          <label>
+            <input type="checkbox" name="boissons[]" value="Champagne">
+            Champagne
+          </label>
+
+          <label>
+            <input type="checkbox" name="boissons[]" value="Cocktails sans alcool">
+            Cocktails sans alcool
+          </label>
+
+          <label>
+            <input type="checkbox" name="boissons[]" value="Jus">
+            Jus
+          </label>
+
+          <label>
+            <input type="checkbox" name="boissons[]" value="Eau">
+            Eau
+          </label>
+
+          <label>
+            <input type="checkbox" name="boissons[]" value="Thé / café">
+            Thé / café
+          </label>
+
+          <label>
+            <input type="checkbox" name="boissons[]" value="Je ne bois pas d'alcool">
+            Je ne bois pas d'alcool
+          </label>
+        </div>
+
+        <label for="preference-boisson">
+          Une préférence particulière ?
+        </label>
+        <textarea id="preference-boisson" name="preference_boisson"></textarea>
+      </fieldset>
+
+
+      <!-- 10 — TRANSPORTS -->
+      <fieldset>
+        <legend>10 — Transports 🚗</legend>
+
+        <label>Souhaitez-vous recevoir des informations sur les déplacements à Marrakech ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="infos_transport" value="Oui">
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="infos_transport" value="Non">
+            Non
+          </label>
+        </div>
+
+        <label>De quelles informations pourriez-vous avoir besoin ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="checkbox" name="transport_besoins[]" value="Aéroport vers logement">
+            Aéroport → logement
+          </label>
+
+          <label>
+            <input type="checkbox" name="transport_besoins[]" value="Logement vers mariage">
+            Logement → lieu du mariage
+          </label>
+
+          <label>
+            <input type="checkbox" name="transport_besoins[]" value="Mariage vers logement">
+            Lieu du mariage → logement
+          </label>
+
+          <label>
+            <input type="checkbox" name="transport_besoins[]" value="Logement vers aéroport">
+            Logement → aéroport
+          </label>
+
+          <label>
+            <input type="checkbox" name="transport_besoins[]" value="Déplacements Marrakech">
+            Déplacements dans Marrakech
+          </label>
+        </div>
+      </fieldset>
+
+
+      <!-- 11 — BESOINS -->
+      <fieldset>
+        <legend>11 — Besoin particulier 🤍</legend>
+
+        <label for="besoin-particulier">
+          Y a-t-il quelque chose dont nous devrions tenir compte pour rendre votre séjour plus confortable ?
+        </label>
+
+        <textarea id="besoin-particulier" name="besoin_particulier"></textarea>
+      </fieldset>
+
+
+      <!-- 12 — PHOTOS -->
+      <fieldset>
+        <legend>12 — Photos & vidéos 📸</legend>
+
+        <label>Acceptez-vous d'apparaître sur les photos et vidéos du mariage ?</label>
+
+        <div class="rsvp-options">
+          <label>
+            <input type="radio" name="photos_videos" value="Oui" required>
+            Oui
+          </label>
+
+          <label>
+            <input type="radio" name="photos_videos" value="Non">
+            Non
+          </label>
+        </div>
+      </fieldset>
+
+
+      <!-- 13 — PETIT MOT -->
+      <fieldset>
+        <legend>13 — Un petit mot pour les mariés 💌</legend>
+
+        <label for="message">
+          Laissez-nous un petit mot, une pensée ou un message pour notre mariage :
+        </label>
+
+        <textarea id="message" name="message"></textarea>
+      </fieldset>
+
+
+      <!-- CONFIRMATION -->
+      <button type="submit" class="button rsvp-submit">
+        💍 CONFIRMER MON RSVP
+      </button>
+
+      <div id="rsvp-success" class="rsvp-success">
+        <h3>❤️ Merci !</h3>
+        <p>
+          Votre réponse a bien été enregistrée.
+          Nous avons hâte de vous retrouver à Marrakech.
+        </p>
+      </div>
+
+    </form>
 
   </div>
+
+  <script>
+    const rsvpForm = document.getElementById("wedding-rsvp-form");
+    const rsvpSuccess = document.getElementById("rsvp-success");
+
+    rsvpForm.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const submitButton = rsvpForm.querySelector("button[type='submit']");
+      submitButton.disabled = true;
+      submitButton.textContent = "Envoi en cours…";
+
+      try {
+        const response = await fetch(rsvpForm.action, {
+          method: "POST",
+          body: new FormData(rsvpForm),
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+          rsvpForm.reset();
+          rsvpForm.style.display = "none";
+          rsvpSuccess.style.display = "block";
+        } else {
+          submitButton.disabled = false;
+          submitButton.textContent = "💍 CONFIRMER MON RSVP";
+          alert("Une erreur est survenue. Merci de réessayer.");
+        }
+
+      } catch (error) {
+        submitButton.disabled = false;
+        submitButton.textContent = "💍 CONFIRMER MON RSVP";
+        alert("Impossible d'envoyer le formulaire pour le moment. Vérifiez votre connexion.");
+      }
+    });
+  </script>
 
 </section>
 
