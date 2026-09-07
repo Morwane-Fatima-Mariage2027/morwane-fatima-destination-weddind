@@ -1,338 +1,295 @@
 <!doctype html>
-<html lang="fr" dir="ltr">
+<html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#173a78">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#10273f" />
 <title>Morwane & Fatima — Marrakech 2027</title>
-<meta name="description" content="Le mariage de Morwane & Fatima à Marrakech, les 25 et 26 mai 2027.">
+<meta name="description" content="Morwane & Fatima — 25 & 26 mai 2027 à Marrakech. Deux jours entre amour, famille, traditions et été marocain." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
- --indigo:#173a78;--blue:#2e6ca8;--turquoise:#1b9aa6;--terracotta:#c96f48;
- --sand:#f7eddc;--cream:#fffaf1;--white:#fff;--ink:#26364a;--muted:#65748a;
- --line:#e8dfd1;--shadow:0 18px 60px rgba(23,58,120,.12);--radius:26px;
+  --ink:#132238; --indigo:#163a64; --blue:#275d86; --turq:#2f8f8a;
+  --terracotta:#b9684f; --sand:#efe2cf; --cream:#fbf7f0; --ivory:#fffdf9;
+  --gold:#b8955d; --muted:#6f766f; --line:rgba(19,34,56,.12);
+  --radius:28px; --shadow:0 28px 80px rgba(20,34,50,.12);
 }
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Montserrat,Arial,sans-serif;line-height:1.65}
-img{max-width:100%;display:block}a{color:inherit}button,input,select,textarea{font:inherit}
-.nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(255,250,241,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(23,58,120,.09)}
-.nav-inner{max-width:1240px;margin:auto;padding:12px 22px;display:flex;align-items:center;gap:18px}
-.brand{font-family:"Cormorant Garamond",serif;font-size:25px;font-weight:700;color:var(--indigo);white-space:nowrap;text-decoration:none}
-.links{display:flex;gap:5px;align-items:center;margin-left:auto}
-.links a{padding:9px 10px;text-decoration:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--indigo);font-weight:700}
-.langs{display:flex;gap:4px;margin-left:8px}.lang{border:0;background:transparent;color:var(--indigo);padding:8px 9px;border-radius:999px;font-weight:700;cursor:pointer}.lang.active{background:var(--indigo);color:white}
-.menu-btn{display:none;margin-left:auto;border:1px solid var(--line);background:white;border-radius:12px;padding:9px 12px;color:var(--indigo)}
-.hero{min-height:100svh;position:relative;display:grid;place-items:end center;overflow:hidden;background:#153b72}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,66,.12),rgba(10,31,66,.18) 45%,rgba(10,31,66,.78))}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%}
-.hero-card{position:relative;z-index:2;color:white;text-align:center;width:min(900px,92%);padding:90px 0 70px}
-.kicker{letter-spacing:.32em;text-transform:uppercase;font-size:12px;font-weight:700;color:#b9eff1}
-.hero h1{font:700 clamp(58px,10vw,120px)/.82 "Cormorant Garamond",serif;margin:16px 0}
-.hero .date{font-family:"Cormorant Garamond",serif;font-size:clamp(24px,4vw,38px);margin-bottom:25px}
-.hero .cta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 20px;text-decoration:none;font-weight:700;cursor:pointer}
-.btn-primary{background:var(--terracotta);color:white}.btn-light{background:rgba(255,255,255,.92);color:var(--indigo)}
-.section{padding:92px 20px}.wrap{max-width:1160px;margin:auto}.section-head{text-align:center;max-width:780px;margin:0 auto 42px}
-.eyebrow{font-size:11px;letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:var(--turquoise)}
-h2{font:700 clamp(43px,6vw,70px)/.95 "Cormorant Garamond",serif;color:var(--indigo);margin:10px 0 15px}
-h3{font:700 30px/1 "Cormorant Garamond",serif;color:var(--indigo);margin:0 0 10px}
-.lead{color:var(--muted);font-size:16px}
-.story{background:linear-gradient(120deg,#fffaf1,#eef8f7)}
-.story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
-.story-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}.story-photo img{width:100%;height:100%;object-fit:cover}
-.story-copy{font-size:16px}.signature{font:600 32px "Cormorant Garamond",serif;color:var(--indigo)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-.card.click{cursor:pointer;transition:.2s transform,.2s box-shadow}.card.click:hover{transform:translateY(-4px);box-shadow:0 25px 65px rgba(23,58,120,.16)}
-.card .icon{font-size:32px;margin-bottom:12px}.card p{color:var(--muted);margin-bottom:0}
-.timeline{display:grid;gap:16px}.day{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:grid;grid-template-columns:150px 1fr;gap:24px;box-shadow:var(--shadow)}
-.day-date{font:700 34px/1 "Cormorant Garamond",serif;color:var(--indigo)}.day small{color:var(--terracotta);font-weight:700;text-transform:uppercase;letter-spacing:.12em}
-.feature{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.feature-card{background:white;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}.feature-card img{width:100%;height:300px;object-fit:cover}.feature-card .pad{padding:22px}
-.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}.gallery figure{margin:0;border-radius:18px;overflow:hidden;min-height:170px;position:relative}.gallery figure:nth-child(1){grid-column:span 7;grid-row:span 2}.gallery figure:nth-child(2){grid-column:span 5}.gallery figure:nth-child(3){grid-column:span 5}.gallery figure:nth-child(n+4){grid-column:span 4}.gallery img{width:100%;height:100%;object-fit:cover;position:absolute}
-.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:25px}.tab{border:1px solid var(--line);background:white;color:var(--indigo);padding:10px 17px;border-radius:999px;font-weight:700;cursor:pointer}.tab.active{background:var(--indigo);color:white}
-.panel{display:none}.panel.active{display:block}
-.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.transport{background:var(--indigo);color:white}.transport h2,.transport h3{color:white}.transport .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:white}.transport .card p{color:#d9e7f5}
-.rsvp{background:linear-gradient(135deg,#eef8f7,#fff5e7)}form{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:12px;font-weight:700;color:var(--indigo)}input,select,textarea{border:1px solid #d7dfe8;border-radius:13px;padding:12px 13px;background:#fff;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--turquoise);box-shadow:0 0 0 3px rgba(27,154,166,.12)}textarea{min-height:110px;resize:vertical}.form-note{font-size:12px;color:var(--muted)}
-.footer{padding:45px 20px;background:#0e2b58;color:#d9e7f5;text-align:center}.footer strong{font:700 34px "Cormorant Garamond",serif;color:white}.footer a{color:white}
-.modal{position:fixed;inset:0;z-index:100;background:rgba(6,21,45,.72);display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{background:var(--cream);border-radius:28px;max-width:900px;width:100%;max-height:90vh;overflow:auto;padding:30px;position:relative}.close{position:absolute;right:18px;top:18px;border:0;background:white;border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:20px;color:var(--indigo)}
-.notice{padding:14px 16px;border-radius:14px;background:#eef8f7;color:#235f64;margin-top:16px}
-[dir=rtl] .links{margin-left:0;margin-right:auto}[dir=rtl] .nav-inner{direction:rtl}[dir=rtl] .form-grid{direction:rtl}[dir=rtl] body{font-family:Montserrat,Arial,sans-serif}
-@media(max-width:900px){.links{display:none}.menu-btn{display:block}.nav.open .links{display:grid;position:absolute;left:12px;right:12px;top:66px;background:var(--cream);padding:12px;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.nav.open .links a{text-align:center;padding:12px}.langs{margin-left:0}.story-grid,.feature{grid-template-columns:1fr}.cards,.info-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.gallery figure,.gallery figure:nth-child(n){grid-column:span 1;grid-row:span 1;min-height:180px}.gallery figure:first-child{grid-column:1/-1;min-height:280px}.day{grid-template-columns:1fr}.section{padding:75px 16px}}
-@media(max-width:600px){.nav-inner{padding:10px 14px}.brand{font-size:22px}.hero-card{padding-bottom:55px}.hero h1{font-size:64px}.hero .date{font-size:25px}.cards,.info-grid,.form-grid{grid-template-columns:1fr}.section{padding:65px 14px}h2{font-size:50px}.card{padding:22px}.gallery{gap:7px}.gallery figure:first-child{min-height:250px}.feature-card img{height:240px}form{padding:19px}.btn{width:100%}.hero .cta{display:grid;grid-template-columns:1fr;width:min(360px,100%);margin:auto}.day-date{font-size:30px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Manrope",sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+img{display:block;max-width:100%}
+.container{width:min(1180px,88vw);margin:auto}
+.serif{font-family:"Italiana",serif;font-weight:400}
+.kicker{font:600 10px/1 "DM Sans",sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+
+/* NAV */
+.navbar{position:fixed;left:0;right:0;top:0;z-index:50;padding:18px 4vw;display:flex;align-items:center;justify-content:space-between;color:white;transition:.35s}
+.navbar.scrolled{background:rgba(251,247,240,.94);backdrop-filter:blur(18px);color:var(--ink);border-bottom:1px solid var(--line)}
+.brand{font-family:"Italiana",serif;font-size:20px;letter-spacing:.02em}
+.navlinks{display:flex;align-items:center;gap:24px;font:600 10px "DM Sans";letter-spacing:.16em;text-transform:uppercase}
+.navlinks a{opacity:.9}.navlinks a:hover{opacity:.58}
+.langs{display:flex;gap:3px}.langs button{border:0;background:transparent;color:inherit;padding:7px 8px;border-radius:999px;cursor:pointer;font:600 10px "DM Sans";letter-spacing:.1em}.langs button.active{background:rgba(255,255,255,.16)}
+.navbar.scrolled .langs button.active{background:var(--ink);color:white}
+.menu-btn{display:none;border:0;background:transparent;color:inherit;font-size:24px}
+
+/* HERO */
+.hero{min-height:100svh;position:relative;display:grid;align-items:end;color:white;overflow:hidden;background:#132238}
+.hero-media{position:absolute;inset:0;background-image:linear-gradient(180deg,rgba(8,18,28,.12),rgba(8,18,28,.68)),url('assets/couple.jpeg');background-size:cover;background-position:center 58%;transform:scale(1.02)}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(219,171,111,.2),transparent 34%),linear-gradient(90deg,rgba(16,39,63,.5),transparent 55%)}
+.hero-content{position:relative;z-index:2;width:min(1180px,88vw);margin:0 auto;padding:150px 0 8vh}
+.hero-topline{display:flex;justify-content:space-between;align-items:center;margin-bottom:11vh;gap:30px}
+.hero-location{font:500 11px "DM Sans";letter-spacing:.24em;text-transform:uppercase;opacity:.9}
+.hero-mark{width:44px;height:44px;border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;transform:rotate(45deg)}
+.hero-mark span{transform:rotate(-45deg);font-family:"Italiana";font-size:18px;color:#f5dec0}
+.hero h1{font-family:"Italiana",serif;font-weight:400;font-size:clamp(67px,10.5vw,155px);line-height:.82;margin:0;letter-spacing:-.035em}
+.hero h1 .amp{font-size:.65em;color:#e5c493;margin:0 .06em}
+.hero-bottom{margin-top:45px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end;border-top:1px solid rgba(255,255,255,.25);padding-top:24px}
+.hero-date{font-family:"Italiana",serif;font-size:clamp(24px,3.2vw,42px)}
+.hero-note{max-width:520px;font-size:13px;line-height:1.8;opacity:.9;justify-self:end}
+.scroll-cue{display:inline-flex;gap:10px;align-items:center;margin-top:20px;font:600 10px "DM Sans";letter-spacing:.18em;text-transform:uppercase}
+.scroll-cue:before{content:"";width:42px;height:1px;background:#fff}
+
+/* INTRO */
+.intro{padding:130px 0 110px;background:var(--ivory)}
+.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:10vw;align-items:start}
+.intro h2{font-family:"Italiana",serif;font-size:clamp(50px,6.5vw,88px);font-weight:400;line-height:.98;margin:15px 0 0}
+.intro-copy{font-family:"Italiana",serif;font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0;color:#28384b}
+.intro-small{font-family:"Manrope";font-size:13px;line-height:1.9;color:var(--muted);margin-top:28px;max-width:630px}
+
+/* DAYS */
+.days{padding:115px 0;background:linear-gradient(180deg,#ede2d3,#f8f3eb)}
+.days-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:50px;gap:30px}
+.days-head h2{font-family:"Italiana",serif;font-size:clamp(48px,6vw,80px);font-weight:400;margin:10px 0 0}
+.days-note{max-width:420px;color:var(--muted);font-size:12px;line-height:1.8}
+.day-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.day{position:relative;min-height:650px;border-radius:30px;overflow:hidden;color:white;display:flex;align-items:flex-end;box-shadow:var(--shadow)}
+.day:before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s ease}
+.day:hover:before{transform:scale(1.035)}
+.day.one:before{background-image:linear-gradient(180deg,rgba(18,32,49,.1),rgba(18,32,49,.78)),url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1500&q=88')}
+.day.two:before{background-image:linear-gradient(180deg,rgba(18,32,49,.08),rgba(18,32,49,.78)),url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1500&q=88')}
+.day-content{position:relative;z-index:2;padding:42px;width:100%}
+.day-number{font:600 10px "DM Sans";letter-spacing:.25em;text-transform:uppercase;color:#eed1a9}
+.day h3{font-family:"Italiana",serif;font-size:clamp(44px,5vw,68px);font-weight:400;line-height:.95;margin:12px 0 22px}
+.day-list{display:grid;gap:9px;border-top:1px solid rgba(255,255,255,.28);padding-top:20px}
+.day-list div{display:flex;justify-content:space-between;gap:20px;font-size:12px;line-height:1.5}
+.day-list span:first-child{opacity:.72}.day-list span:last-child{text-align:right}
+
+/* VILLA */
+.villa{padding:130px 0;background:var(--ivory)}
+.villa-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:7vw;align-items:center}
+.villa-photo-wrap{position:relative}
+.villa-photo{height:720px;border-radius:30px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.12)),url('assets/pool-sunset.jpeg') center/cover;box-shadow:var(--shadow)}
+.villa-tag{position:absolute;right:-25px;bottom:45px;background:var(--indigo);color:white;padding:24px 26px;border-radius:20px;width:220px;font-family:"Italiana";font-size:24px;line-height:1.2}
+.villa-copy h2{font-family:"Italiana",serif;font-size:clamp(54px,6vw,84px);font-weight:400;line-height:.96;margin:15px 0 24px}
+.villa-copy p{font-size:13px;line-height:1.9;color:var(--muted)}
+.amenities{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.amenity{padding:18px 0;font:500 11px "DM Sans";letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+.amenity:nth-last-child(-n+2){border-bottom:0}
+.villa-note{background:#f4ecdf;border-radius:18px;padding:18px 20px;color:#4f5961;font-size:11px!important}
+
+/* DAR LAYYINA GALLERY */
+.venue-gallery{padding:0 0 130px;background:var(--ivory)}
+.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.gallery-head h2{font-family:"Italiana";font-size:clamp(46px,5.7vw,76px);font-weight:400;line-height:.98;margin:10px 0 0}
+.gallery-head p{max-width:520px;font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+.venue-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:220px;gap:14px}
+.venue-item{position:relative;overflow:hidden;border-radius:24px;background:#ddd;box-shadow:0 18px 45px rgba(20,34,50,.08)}
+.venue-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.venue-item:hover img{transform:scale(1.035)}
+.venue-item:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,18,28,.58))}
+.venue-item span{position:absolute;z-index:2;left:18px;bottom:15px;color:white;font:600 10px "DM Sans";letter-spacing:.16em;text-transform:uppercase}
+.venue-item.wide{grid-column:span 8;grid-row:span 2}.venue-item.tall{grid-column:span 4;grid-row:span 2}.venue-item.third{grid-column:span 4}.venue-item.half{grid-column:span 6}
+@media(max-width:900px){.gallery-head{display:block}.gallery-head p{margin-top:16px}.venue-grid{grid-template-columns:1fr 1fr;grid-auto-rows:210px}.venue-item,.venue-item.wide,.venue-item.tall,.venue-item.third,.venue-item.half{grid-column:span 1;grid-row:span 1}.venue-item.wide{grid-column:span 2}}
+@media(max-width:520px){.venue-grid{grid-template-columns:1fr}.venue-item.wide{grid-column:span 1}}
+
+/* MARRAKECH */
+.marrakech{padding:120px 0;background:#10273f;color:white}
+.marrakech-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:48px}
+.marrakech h2{font-family:"Italiana";font-size:clamp(54px,6vw,84px);font-weight:400;line-height:.96;margin:12px 0 0}
+.marrakech-head p{color:#d5d9dc;font-size:13px;line-height:1.9;margin:0}
+.travel-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-auto-rows:280px;gap:14px}
+.travel-card{position:relative;border-radius:24px;overflow:hidden;background:#243;cursor:pointer}
+.travel-card.big{grid-row:span 2}
+.travel-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.72));z-index:1}
+.travel-card .pic{position:absolute;inset:0;background:center/cover;transition:.55s}
+.travel-card:hover .pic{transform:scale(1.05)}
+.travel-card .txt{position:absolute;z-index:2;left:22px;right:22px;bottom:20px}
+.travel-card h3{font-family:"Italiana";font-size:32px;font-weight:400;margin:0 0 4px}
+.travel-card p{font-size:11px;line-height:1.6;color:#e7e7e7;margin:0}
+
+/* PRACTICAL */
+.practical{padding:115px 0;background:#f6efe4}
+.practical-head{text-align:center;max-width:760px;margin:0 auto 48px}.practical-head h2{font-family:"Italiana";font-size:clamp(50px,6vw,80px);font-weight:400;margin:12px 0}.practical-head p{font-size:12px;line-height:1.8;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--ivory);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:250px}
+.card-num{font-family:"Italiana";font-size:20px;color:var(--gold)}
+.card h3{font-family:"Italiana";font-size:34px;font-weight:400;margin:28px 0 12px}
+.card p{font-size:12px;line-height:1.8;color:var(--muted)}
+
+/* RSVP */
+.rsvp{padding:120px 0;background:linear-gradient(125deg,#173b65,#256d78);color:white;position:relative;overflow:hidden}
+.rsvp:before{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(255,255,255,.12);transform:rotate(45deg);right:-250px;top:-250px}
+.rsvp-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw;align-items:start;position:relative;z-index:2}
+.rsvp h2{font-family:"Italiana";font-size:clamp(54px,6vw,86px);font-weight:400;line-height:.96;margin:15px 0 22px}
+.rsvp-copy p{font-size:13px;line-height:1.9;color:#d8e4e7}
+.form{background:rgba(255,255,255,.98);color:var(--ink);border-radius:26px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.16)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field.full{grid-column:1/-1}
+label{display:block;font:600 9px "DM Sans";letter-spacing:.13em;text-transform:uppercase;margin:0 0 7px;color:#53616c}
+input,select,textarea{width:100%;border:1px solid #d7ddd9;border-radius:12px;padding:12px 13px;background:#fff;color:var(--ink);outline:none}textarea{min-height:95px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:#809ca5;box-shadow:0 0 0 3px rgba(47,143,138,.1)}
+.submit{margin-top:15px;width:100%;border:0;border-radius:999px;padding:14px 18px;background:var(--ink);color:white;font:600 10px "DM Sans";letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.form-note{margin-top:10px;font-size:10px;color:#7a858c;text-align:center}
+
+/* FOOTER */
+footer{background:#0c1d2d;color:#dfe4e6;padding:70px 0 34px}
+.footer-top{display:flex;justify-content:space-between;gap:40px;align-items:end;border-bottom:1px solid rgba(255,255,255,.13);padding-bottom:35px}
+.footer-name{font-family:"Italiana";font-size:clamp(40px,5vw,70px);color:white}
+.footer-date{text-align:right;font:500 10px "DM Sans";letter-spacing:.2em;text-transform:uppercase;line-height:1.9;color:#c8cfd3}
+.footer-bottom{display:flex;justify-content:space-between;gap:30px;margin-top:25px;font-size:10px;color:#87949d}
+
+/* MODAL / MOBILE */
+.mobile-panel{display:none}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+ .navlinks{display:none}.menu-btn{display:block}.navbar{padding:16px 20px}.brand{font-size:18px}
+ .mobile-panel{position:fixed;inset:0;z-index:49;background:#10273f;color:white;padding:100px 28px 40px;display:none}.mobile-panel.open{display:block}.mobile-panel a{display:block;font-family:"Italiana";font-size:38px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.13)}
+ .hero-content{padding-bottom:6vh}.hero-topline{margin-bottom:14vh}.hero-mark{display:none}.hero h1{font-size:clamp(62px,20vw,110px)}.hero-bottom{grid-template-columns:1fr;gap:20px}.hero-note{justify-self:start}.hero-location{font-size:9px}
+ .intro-grid,.villa-grid,.marrakech-head,.rsvp-grid{grid-template-columns:1fr;gap:45px}.intro{padding:90px 0}.intro-copy{font-size:30px}
+ .days{padding:90px 0}.days-head{display:block}.days-note{margin-top:18px}.day-grid{grid-template-columns:1fr}.day{min-height:560px}.day-content{padding:30px}
+ .villa{padding:90px 0}.villa-photo{height:520px}.villa-tag{right:15px;bottom:15px;width:auto;max-width:210px}.amenities{grid-template-columns:1fr 1fr}
+ .marrakech{padding:90px 0}.travel-grid{grid-template-columns:1fr 1fr;grid-auto-rows:230px}.travel-card.big{grid-row:span 1;grid-column:span 2}
+ .cards{grid-template-columns:1fr}.card{min-height:auto}.rsvp{padding:90px 0}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}
+ .footer-top,.footer-bottom{display:block}.footer-date{text-align:left;margin-top:20px}.footer-bottom div+div{margin-top:9px}
+}
+@media(max-width:520px){.travel-grid{grid-template-columns:1fr}.travel-card.big{grid-column:auto}.hero-date{font-size:28px}.day-list div{display:block}.day-list span:last-child{text-align:left;display:block;margin-top:3px}.villa-photo{height:430px}}
 </style>
 </head>
 <body>
-<header class="nav" id="nav">
-  <div class="nav-inner">
-    <a class="brand" href="#accueil">M & F</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
-    <nav class="links">
-      <a href="#histoire" data-i18n="nav.story">Notre histoire</a>
-      <a href="#celebration" data-i18n="nav.celebration">La célébration</a>
-      <a href="#villa" data-i18n="nav.villa">La villa</a>
-      <a href="#marrakech" data-i18n="nav.marrakech">Marrakech</a>
-      <a href="#hebergement" data-i18n="nav.stay">Où séjourner</a>
-      <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
-      <a href="#menus" data-i18n="nav.menus">Menus</a>
-      <a href="#transport" data-i18n="nav.transport">Transport</a>
-      <a href="#rsvp" data-i18n="nav.rsvp">RSVP</a>
-    </nav>
-    <div class="langs">
-      <button class="lang active" data-lang="fr">FR</button><button class="lang" data-lang="en">EN</button><button class="lang" data-lang="ar">ع</button>
-    </div>
+<header class="navbar" id="nav">
+  <a class="brand" href="#top">M & F</a>
+  <nav class="navlinks">
+    <a href="#story" data-i18n="nav_story">Notre histoire</a>
+    <a href="#days" data-i18n="nav_days">Les deux jours</a>
+    <a href="#villa">Dar Layyina</a>
+    <a href="#marrakech">Marrakech</a>
+    <a href="#practical" data-i18n="nav_practical">Votre séjour</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:10px">
+    <div class="langs"><button class="active" data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="ar">AR</button></div>
+    <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">☰</button>
   </div>
 </header>
+<div class="mobile-panel" id="mobilePanel"><a href="#story" onclick="toggleMenu()">Notre histoire</a><a href="#days" onclick="toggleMenu()">Les deux jours</a><a href="#villa" onclick="toggleMenu()">Dar Layyina</a><a href="#marrakech" onclick="toggleMenu()">Marrakech</a><a href="#practical" onclick="toggleMenu()">Votre séjour</a><a href="#rsvp" onclick="toggleMenu()">RSVP</a></div>
 
-<main>
-<section class="hero" id="accueil">
-  <img src="assets/couple.jpeg" alt="Morwane et Fatima">
-  <div class="hero-card">
-    <div class="kicker" data-i18n="hero.kicker">Notre histoire continue à Marrakech</div>
-    <h1>Morwane & Fatima</h1>
-    <div class="date" data-i18n="hero.date">25 & 26 mai 2027 · Marrakech</div>
-    <div class="cta">
-      <a class="btn btn-primary" href="#celebration" data-i18n="hero.cta1">Découvrir la célébration</a>
-      <a class="btn btn-light" href="#rsvp" data-i18n="hero.cta2">Confirmer ma présence</a>
+<main id="top">
+<section class="hero">
+  <div class="hero-media"></div><div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-topline"><div class="hero-location">Destination Wedding · Marrakech · Maroc</div><div class="hero-mark"><span>MF</span></div></div>
+    <h1>Morwane <span class="amp">&</span><br>Fatima</h1>
+    <div class="hero-bottom">
+      <div><div class="hero-date">25 — 26 mai 2027</div><a class="scroll-cue" href="#story" data-i18n="discover">Découvrir</a></div>
+      <div class="hero-note" data-i18n="hero_note">Deux jours pour célébrer notre amour, nos familles et nos cultures, sous le soleil de Marrakech.</div>
     </div>
   </div>
 </section>
 
-<section class="section story" id="histoire">
-<div class="wrap story-grid">
-  <div class="story-copy">
-    <div class="eyebrow" data-i18n="story.eyebrow">Notre histoire</div>
-    <h2 data-i18n="story.title">Un nouveau chapitre, à Marrakech</h2>
-    <p data-i18n="story.p1">Après toutes ces années partagées, nous avons choisi Marrakech pour célébrer entourés de nos familles et de nos proches.</p>
-    <p data-i18n="story.p2">Ce site est notre petit carnet de voyage : toutes les informations utiles pour profiter pleinement de ces journées, découvrir Marrakech et nous retrouver.</p>
-    <div class="signature">Morwane & Fatima</div>
+<section class="intro" id="story"><div class="container intro-grid reveal">
+  <div><div class="kicker" data-i18n="story_kicker">Notre histoire</div><h2 data-i18n="story_title">Un mariage qui nous ressemble.</h2></div>
+  <div><p class="intro-copy" data-i18n="story_big">Nous avons choisi Marrakech pour réunir ceux que nous aimons autour de deux journées faites de chaleur, de traditions, de fête et de souvenirs.</p><p class="intro-small" data-i18n="story_small">Ce site évoluera avec nos préparatifs. Les horaires, menus et informations pratiques seront mis à jour au fur et à mesure de leur confirmation.</p></div>
+</div></section>
+
+<section class="days" id="days"><div class="container">
+  <div class="days-head reveal"><div><div class="kicker" data-i18n="days_kicker">25 & 26 mai 2027</div><h2 data-i18n="days_title">Deux jours, deux atmosphères.</h2></div><div class="days-note" data-i18n="days_note">Le programme ci-dessous présente l’esprit des deux célébrations. Les horaires définitifs seront annoncés une fois le déroulé validé.</div></div>
+  <div class="day-grid">
+    <article class="day one reveal"><div class="day-content"><div class="day-number">Jour 01 · 25 mai</div><h3 data-i18n="day1_title">La soirée traditionnelle</h3><div class="day-list"><div><span data-i18n="moment">Moments</span><span>Anhala · Henné · Tadwat</span></div><div><span data-i18n="atmosphere">Ambiance</span><span data-i18n="day1_atmo">Touareg · musique · partage</span></div><div><span data-i18n="dinner">Dîner</span><span data-i18n="day1_food">Cuisine traditionnelle & convivialité</span></div></div></div></article>
+    <article class="day two reveal"><div class="day-content"><div class="day-number">Jour 02 · 26 mai</div><h3 data-i18n="day2_title">La grande célébration</h3><div class="day-list"><div><span data-i18n="moment">Moments</span><span data-i18n="day2_moments">Cérémonie laïque · cocktail</span></div><div><span data-i18n="atmosphere">Ambiance</span><span data-i18n="day2_atmo">Élégante · chaleureuse · festive</span></div><div><span data-i18n="evening">Soirée</span><span data-i18n="day2_evening">Dîner · musique · danse · surprises</span></div></div></div></article>
   </div>
-  <div class="story-photo"><img src="assets/couple.jpeg" alt="Notre photo"></div>
-</div>
-</section>
+</div></section>
 
-<section class="section" id="celebration">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow" data-i18n="celebration.eyebrow">La célébration</div><h2 data-i18n="celebration.title">Deux journées à partager</h2><p class="lead" data-i18n="celebration.lead">Retrouvez ici le programme, les ambiances et les moments importants du mariage.</p></div>
- <div class="timeline">
-  <article class="day"><div><small data-i18n="day1.label">Lundi</small><div class="day-date">25<br>mai</div></div><div><h3 data-i18n="day1.title">Soirée Touareg</h3><p data-i18n="day1.text">Une première soirée chaleureuse autour d'une ambiance traditionnelle, d'un dîner convivial, de musique et de belles retrouvailles.</p></div></article>
-  <article class="day"><div><small data-i18n="day2.label">Mardi</small><div class="day-date">26<br>mai</div></div><div><h3 data-i18n="day2.title">La célébration</h3><p data-i18n="day2.text">La journée du mariage : cérémonie, cocktail, dîner, musique et soirée avec tous ceux que nous aimons.</p></div></article>
- </div>
-</div>
-</section>
+<section class="villa" id="villa"><div class="container villa-grid">
+  <div class="villa-photo-wrap reveal"><div class="villa-photo"></div><div class="villa-tag" data-i18n="villa_tag">Notre maison de fête pendant deux jours.</div></div>
+  <div class="villa-copy reveal"><div class="kicker">Dar Layyina</div><h2 data-i18n="villa_title">Un lieu pour se retrouver.</h2><p data-i18n="villa_text">Dar Layyina accueillera nos deux célébrations à Marrakech. C’est ici que nous partagerons les grands moments du 25 et du 26 mai.</p><div class="amenities"><div class="amenity">2 piscines</div><div class="amenity">Tennis</div><div class="amenity">Golf</div><div class="amenity">Basketball</div><div class="amenity">Ping-pong</div><div class="amenity">Pétanque</div><div class="amenity">Sauna</div><div class="amenity">Hammam & massage</div></div><p class="villa-note" data-i18n="villa_note"><strong>À noter :</strong> Dar Layyina est notre lieu de célébration, pas l’hébergement des invités. Une sélection d’hôtels, villas et appartements sera proposée séparément.</p></div>
+</div></section>
 
-<section class="section story" id="villa">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow" data-i18n="villa.eyebrow">Notre lieu de célébration</div><h2>Dar Layyina</h2><p class="lead" data-i18n="villa.intro">Dar Layyina est notre lieu de célébration à Marrakech. Ce n'est pas l'hébergement des invités. Pendant les temps libres, vous pourrez toutefois profiter de ses espaces et installations.</p></div>
- <div class="cards">
-  <article class="card click" data-modal="pool"><div class="icon">🏊🏽‍♀️</div><h3 data-i18n="villa.pool.title">Piscines</h3><p data-i18n="villa.pool.text">Deux espaces piscine pour se détendre entre les moments de la célébration.</p></article>
-  <article class="card click" data-modal="sports"><div class="icon">🎾</div><h3 data-i18n="villa.sports.title">Sports & jeux</h3><p data-i18n="villa.sports.text">Tennis, pétanque, ping-pong, basket et autres espaces pour profiter de la villa.</p></article>
-  <article class="card click" data-modal="wellness"><div class="icon">🌿</div><h3 data-i18n="villa.well.title">Bien-être</h3><p data-i18n="villa.well.text">Hammam, sauna et massages : certaines prestations sont disponibles sur réservation et peuvent être payantes.</p></article>
- </div>
-</div>
-</section>
-
-<section class="section" id="marrakech">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow">Marrakech</div><h2 data-i18n="marrakech.title">À découvrir autour de la célébration</h2><p class="lead" data-i18n="marrakech.lead">Une sélection d'idées pour celles et ceux qui souhaitent prolonger le séjour.</p></div>
- <div class="cards">
-  <article class="card click" data-modal="culture"><div class="icon">🕌</div><h3 data-i18n="marrakech.culture">Culture & patrimoine</h3><p data-i18n="marrakech.cultureText">Médina, palais, jardins, musées et souks.</p></article>
-  <article class="card click" data-modal="experiences"><div class="icon">🐪</div><h3 data-i18n="marrakech.exp">Expériences</h3><p data-i18n="marrakech.expText">Agafay, Atlas, vallée de l'Ourika, montgolfière et autres activités.</p></article>
-  <article class="card click" data-modal="shopping"><div class="icon">🛍️</div><h3 data-i18n="marrakech.shop">Souks & shopping</h3><p data-i18n="marrakech.shopText">Artisanat, créations locales et souvenirs à rapporter.</p></article>
- </div>
-</div>
-</section>
-
-<section class="section story" id="hebergement">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow" data-i18n="stay.eyebrow">Votre séjour</div><h2 data-i18n="stay.title">Où séjourner</h2><p class="lead" data-i18n="stay.lead">Les hébergements sont organisés séparément du lieu de célébration. Vous trouverez ici des options à proximité de Dar Layyina.</p></div>
- <div class="cards">
-  <article class="card click" data-modal="hotels"><div class="icon">🏨</div><h3 data-i18n="stay.hotels">Hôtels</h3><p data-i18n="stay.hotelsText">Une sélection d'hôtels à proximité, à compléter avec nos recommandations.</p></article>
-  <article class="card click" data-modal="villas"><div class="icon">🏡</div><h3 data-i18n="stay.villas">Villas</h3><p data-i18n="stay.villasText">Pour celles et ceux qui souhaitent davantage d'espace et voyager en groupe.</p></article>
-  <article class="card click" data-modal="apartments"><div class="icon">🏠</div><h3 data-i18n="stay.apartments">Appartements</h3><p data-i18n="stay.apartmentsText">Une alternative pratique pour organiser un séjour à plusieurs.</p></article>
- </div>
-</div>
-</section>
-
-<section class="section" id="menus">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow" data-i18n="menus.eyebrow">Food & celebration</div><h2 data-i18n="menus.title">Les menus</h2><p class="lead" data-i18n="menus.lead">Les détails des menus pourront être ajustés au fil des préparatifs.</p></div>
- <div class="tabs"><button class="tab active" data-tab="m25">25 mai</button><button class="tab" data-tab="m26">26 mai</button></div>
- <div id="m25" class="panel active"><div class="feature"><article class="feature-card"><img src="assets/pool-sunset.jpeg" alt=""><div class="pad"><h3 data-i18n="menu25.title">Soirée traditionnelle Touareg</h3><p data-i18n="menu25.text">Méchoui, couscous et douceurs, dans une ambiance chaleureuse inspirée de nos traditions.</p></div></article><article class="feature-card"><img src="assets/petanque.jpeg" alt=""><div class="pad"><h3 data-i18n="menu25.amb">Une soirée à partager</h3><p data-i18n="menu25.ambText">Musique Touareg, tapis, coussins, tables basses et retrouvailles avant le grand jour.</p></div></article></div></div>
- <div id="m26" class="panel"><div class="feature"><article class="feature-card"><img src="assets/couple.jpeg" alt=""><div class="pad"><h3 data-i18n="menu26.title">La célébration du mariage</h3><p data-i18n="menu26.text">Cérémonie laïque, cocktail, dîner à table, musique et soirée dansante.</p></div></article><article class="feature-card"><img src="assets/pool-main.jpeg" alt=""><div class="pad"><h3 data-i18n="menu26.amb">Une journée élégante</h3><p data-i18n="menu26.ambText">Une atmosphère pensée pour célébrer ensemble, profiter du lieu et créer de beaux souvenirs.</p></div></article></div></div>
-</div>
-</section>
-
-<section class="section" id="galerie">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow" data-i18n="gallery.eyebrow">Galerie</div><h2 data-i18n="gallery.title">Marrakech & Dar Layyina</h2><p class="lead" data-i18n="gallery.lead">Les premières images sont là pour vous donner un aperçu. D'autres photos de nous et du mariage seront ajoutées au fil des préparatifs.</p></div>
- <div class="gallery">
-  <figure><img src="assets/couple.jpeg" alt="Morwane et Fatima"></figure>
-  <figure><img src="assets/pool-main.jpeg" alt="Piscine"></figure>
-  <figure><img src="assets/petanque.jpeg" alt="Pétanque"></figure>
-  <figure><img src="assets/tennis.jpeg" alt="Tennis"></figure>
-  <figure><img src="assets/ping-pong.jpeg" alt="Ping-pong"></figure>
-  <figure><img src="assets/basketball.jpeg" alt="Basket"></figure>
-  <figure><img src="assets/hammam.jpeg" alt="Hammam"></figure>
-  <figure><img src="assets/sauna.jpeg" alt="Sauna"></figure>
-  <figure><img src="assets/massage.jpeg" alt="Massage"></figure>
-  <figure><img src="assets/golf.jpeg" alt="Golf"></figure>
-  <figure><img src="assets/pool-sunset.jpeg" alt="Piscine au coucher du soleil"></figure>
- </div>
-</div>
-</section>
-
-<section class="section transport" id="transport">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow" style="color:#b9eff1" data-i18n="transport.eyebrow">Se déplacer</div><h2 data-i18n="transport.title">Retour & transport</h2><p class="lead" style="color:#d9e7f5" data-i18n="transport.lead">Nous prévoyons de vous donner ici les informations pratiques pour rentrer facilement, notamment si la soirée se termine tard.</p></div>
- <div class="cards">
-  <article class="card"><div class="icon">🚐</div><h3 data-i18n="transport.shuttle">Navette / minibus</h3><p data-i18n="transport.shuttleText">Les horaires et points de départ seront indiqués ici dès qu'ils seront définitivement organisés.</p></article>
-  <article class="card"><div class="icon">🚕</div><h3 data-i18n="transport.taxi">Taxi</h3><p data-i18n="transport.taxiText">Une solution pour réserver ou demander un taxi selon vos besoins, avec les informations de contact à venir.</p></article>
-  <article class="card"><div class="icon">📍</div><h3 data-i18n="transport.location">Itinéraire</h3><p data-i18n="transport.locationText">Les informations d'accès à Dar Layyina et les coordonnées utiles seront ajoutées ici.</p></article>
- </div>
-</div>
-</section>
-
-<section class="section rsvp" id="rsvp">
-<div class="wrap">
- <div class="section-head"><div class="eyebrow" data-i18n="rsvp.eyebrow">Réponse souhaitée</div><h2 data-i18n="rsvp.title">Confirmer votre présence</h2><p class="lead" data-i18n="rsvp.lead">Merci de remplir une réponse par foyer ou par invité selon votre invitation.</p></div>
- <form action="https://formspree.io/f/xeajyaqe" method="POST">
-  <input type="hidden" name="_subject" value="RSVP — Morwane & Fatima — Marrakech 2027">
-  <div class="form-grid">
-   <div class="field"><label data-i18n="form.first">* Prénom</label><input name="prenom" required></div>
-   <div class="field"><label data-i18n="form.last">* Nom</label><input name="nom" required></div>
-   <div class="field"><label data-i18n="form.email">* E-mail</label><input type="email" name="email" required></div>
-   <div class="field"><label data-i18n="form.phone">* WhatsApp / téléphone</label><input name="telephone" required></div>
-   <div class="field"><label data-i18n="form.city">Ville et pays de résidence</label><input name="residence"></div>
-   <div class="field"><label data-i18n="form.attend">Présence</label><select name="presence"><option data-i18n="form.yes">Oui, je serai là</option><option data-i18n="form.no">Non, malheureusement</option></select></div>
-   <div class="field"><label data-i18n="form.adults">Nombre d'adultes</label><input type="number" min="0" max="20" name="adultes" value="1"></div>
-   <div class="field"><label data-i18n="form.children">Nombre d'enfants</label><input type="number" min="0" max="20" name="enfants" value="0"></div>
-   <div class="field"><label data-i18n="form.day25">Présence le 25 mai</label><select name="25_mai"><option>Oui</option><option>Non</option></select></div>
-   <div class="field"><label data-i18n="form.day26">Présence le 26 mai</label><select name="26_mai"><option>Oui</option><option>Non</option></select></div>
-   <div class="field"><label data-i18n="form.stay">Hébergement souhaité</label><select name="hebergement"><option data-i18n="form.self">Je m'organise moi-même</option><option data-i18n="form.help">J'aimerais recevoir des recommandations</option></select></div>
-   <div class="field"><label data-i18n="form.transport">Transport / retour</label><select name="transport"><option data-i18n="form.shuttle">Je souhaite les informations de navette</option><option data-i18n="form.taxi">Je pourrais avoir besoin d'un taxi</option><option data-i18n="form.none">Je m'organise moi-même</option></select></div>
-   <div class="field full"><label data-i18n="form.diet">Allergies, régime alimentaire ou informations importantes</label><textarea name="diet"></textarea></div>
-   <div class="field full"><label data-i18n="form.message">Un message pour nous</label><textarea name="message"></textarea></div>
+<section class="venue-gallery" aria-labelledby="venue-gallery-title"><div class="container">
+  <div class="gallery-head reveal"><div><div class="kicker">Dar Layyina</div><h2 id="venue-gallery-title">Un lieu à vivre, pas seulement à regarder.</h2></div><p>Entre les célébrations, la villa offre aussi de vrais moments de vacances : sport, piscine et bien-être, dans les jardins de Dar Layyina.</p></div>
+  <div class="venue-grid">
+    <figure class="venue-item wide reveal"><img src="assets/pool-main.jpeg" alt="Piscine de Dar Layyina" loading="lazy"><span>Piscine</span></figure>
+    <figure class="venue-item tall reveal"><img src="assets/tennis.jpeg" alt="Terrain de tennis de Dar Layyina" loading="lazy"><span>Tennis</span></figure>
+    <figure class="venue-item third reveal"><img src="assets/golf.jpeg" alt="Golf à Dar Layyina" loading="lazy"><span>Golf</span></figure>
+    <figure class="venue-item third reveal"><img src="assets/basketball.jpeg" alt="Terrain de basketball de Dar Layyina" loading="lazy"><span>Basketball</span></figure>
+    <figure class="venue-item third reveal"><img src="assets/ping-pong.jpeg" alt="Table de ping-pong de Dar Layyina" loading="lazy"><span>Ping-pong</span></figure>
+    <figure class="venue-item half reveal"><img src="assets/petanque.jpeg" alt="Terrain de pétanque de Dar Layyina" loading="lazy"><span>Pétanque</span></figure>
+    <figure class="venue-item half reveal"><img src="assets/pool-sunset.jpeg" alt="Deuxième piscine de Dar Layyina au coucher du soleil" loading="lazy"><span>Deuxième piscine</span></figure>
+    <figure class="venue-item third reveal"><img src="assets/sauna.jpeg" alt="Sauna de Dar Layyina" loading="lazy"><span>Sauna</span></figure>
+    <figure class="venue-item third reveal"><img src="assets/massage.jpeg" alt="Massage dans le jardin de Dar Layyina" loading="lazy"><span>Massage au jardin</span></figure>
+    <figure class="venue-item third reveal"><img src="assets/hammam.jpeg" alt="Hammam de Dar Layyina" loading="lazy"><span>Hammam</span></figure>
   </div>
-  <p class="form-note" data-i18n="form.note">Vos réponses nous aideront à préparer votre accueil. Les détails pourront être mis à jour ultérieurement.</p>
-  <button class="btn btn-primary" type="submit" data-i18n="form.submit">Enregistrer ma réponse</button>
-  <div class="notice" data-i18n="form.success">Après l'envoi, votre réponse sera enregistrée dans notre formulaire RSVP.</div>
+</div></section>
+
+<section class="marrakech" id="marrakech"><div class="container">
+ <div class="marrakech-head reveal"><div><div class="kicker" style="color:#d8b57b">Marrakech</div><h2 data-i18n="marrakech_title">Prolongez le voyage.</h2></div><p data-i18n="marrakech_text">Nous voulons aussi que ces quelques jours soient une parenthèse de vacances. Ici, vous retrouverez nos adresses, idées et conseils pour profiter de Marrakech à votre rythme.</p></div>
+ <div class="travel-grid">
+   <div class="travel-card big reveal"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=86')"></div><div class="txt"><h3 data-i18n="culture">Culture & patrimoine</h3><p data-i18n="culture_p">Palais, jardins, médina et lieux emblématiques.</p></div></div>
+   <div class="travel-card reveal"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1000&q=86')"></div><div class="txt"><h3 data-i18n="souks">Souks & artisanat</h3><p data-i18n="souks_p">Textiles, objets, couleurs et savoir-faire.</p></div></div>
+   <div class="travel-card reveal"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=86')"></div><div class="txt"><h3 data-i18n="wellness">Bien-être</h3><p data-i18n="wellness_p">Hammams, spas et moments de détente.</p></div></div>
+   <div class="travel-card reveal"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=86')"></div><div class="txt"><h3 data-i18n="experiences">Expériences</h3><p data-i18n="experiences_p">Désert, coucher de soleil et excursions.</p></div></div>
+   <div class="travel-card reveal"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=86')"></div><div class="txt"><h3 data-i18n="restaurants">Nos adresses</h3><p data-i18n="restaurants_p">Restaurants et lieux que nous sélectionnerons.</p></div></div>
+ </div>
+</div></section>
+
+<section class="practical" id="practical"><div class="container">
+ <div class="practical-head reveal"><div class="kicker" data-i18n="practical_kicker">Préparer votre séjour</div><h2 data-i18n="practical_title">Tout ce qu’il faut, sans surcharge.</h2><p data-i18n="practical_text">Les informations pratiques seront affinées à mesure que les réservations et la logistique seront confirmées.</p></div>
+ <div class="cards">
+   <div class="card reveal"><div class="card-num">01</div><h3 data-i18n="stay">Où séjourner</h3><p data-i18n="stay_p">Hôtels, villas et appartements proches de Dar Layyina, pour différents budgets.</p></div>
+   <div class="card reveal"><div class="card-num">02</div><h3 data-i18n="transport">Transports</h3><p data-i18n="transport_p">Les informations concernant navettes, transferts et retours seront publiées ici dès confirmation.</p></div>
+   <div class="card reveal"><div class="card-num">03</div><h3 data-i18n="menus">Menus</h3><p data-i18n="menus_p">Les menus des deux journées seront ajoutés lorsqu’ils seront finalisés avec notre traiteur.</p></div>
+ </div>
+</div></section>
+
+<section class="rsvp" id="rsvp"><div class="container rsvp-grid">
+ <div class="rsvp-copy reveal"><div class="kicker" style="color:#e3c28e">RSVP</div><h2 data-i18n="rsvp_title">On compte sur vous.</h2><p data-i18n="rsvp_text">Merci de nous transmettre votre réponse et les informations utiles à l’organisation. Si votre situation change, nous pourrons ajuster votre réponse plus tard.</p></div>
+ <form class="form reveal" id="rsvpForm" onsubmit="handleRSVP(event)">
+  <div class="fields">
+   <div class="field"><label data-i18n="first">Prénom *</label><input name="prenom" required></div>
+   <div class="field"><label data-i18n="last">Nom *</label><input name="nom" required></div>
+   <div class="field"><label>E-mail *</label><input type="email" name="email" required></div>
+   <div class="field"><label>WhatsApp / téléphone *</label><input name="telephone" required></div>
+   <div class="field full"><label data-i18n="residence">Ville & pays de résidence</label><input name="residence"></div>
+   <div class="field"><label data-i18n="attendance">Présence</label><select name="presence"><option data-i18n="yes">Oui, je serai présent(e)</option><option data-i18n="no">Non, je ne pourrai pas venir</option><option data-i18n="maybe">Je ne suis pas encore certain(e)</option></select></div>
+   <div class="field"><label data-i18n="guests">Nombre de personnes</label><input type="number" min="1" name="nombre"></div>
+   <div class="field full"><label data-i18n="guest_names">Nom(s) des accompagnants</label><textarea name="accompagnants"></textarea></div>
+   <div class="field"><label>Anhala / Henné</label><select name="henna"><option>Oui</option><option>Non</option></select></div>
+   <div class="field"><label data-i18n="attire">Tenue traditionnelle Touareg</label><select name="tenue"><option>Oui</option><option>Non</option><option data-i18n="later">Je déciderai plus tard</option></select></div>
+   <div class="field full"><label data-i18n="diet">Allergies / régime alimentaire</label><textarea name="diet"></textarea></div>
+   <div class="field full"><label data-i18n="message">Un message pour nous</label><textarea name="message"></textarea></div>
+  </div>
+  <button class="submit" type="submit" data-i18n="submit">Enregistrer ma réponse</button>
+  <div class="form-note" data-i18n="form_note">Formulaire en mode démonstration — connexion Formspree/Google Forms à finaliser avant mise en ligne définitive.</div>
  </form>
-</div>
-</section>
+</div></section>
 </main>
 
-<footer class="footer">
- <strong>Morwane & Fatima</strong>
- <p data-i18n="footer.text">Marrakech · 25 & 26 mai 2027</p>
- <p><a href="#accueil" data-i18n="footer.top">Retour en haut</a></p>
-</footer>
-
-<!-- Modals -->
-<div class="modal" id="modal">
- <div class="modal-box">
-  <button class="close" id="closeModal">×</button>
-  <div id="modalContent"></div>
- </div>
-</div>
+<footer><div class="container"><div class="footer-top"><div class="footer-name">Morwane & Fatima</div><div class="footer-date">25 — 26 mai 2027<br>Marrakech · Maroc</div></div><div class="footer-bottom"><div>Avec amour, Morwane & Tatta.</div><div data-i18n="footer_note">Ce site continuera d’évoluer jusqu’au mariage.</div></div></div></footer>
 
 <script>
 const T={
-fr:{
-"nav.story":"Notre histoire","nav.celebration":"La célébration","nav.villa":"La villa","nav.marrakech":"Marrakech","nav.stay":"Où séjourner","nav.gallery":"Galerie","nav.menus":"Menus","nav.transport":"Transport","nav.rsvp":"RSVP",
-"hero.kicker":"Notre histoire continue à Marrakech","hero.date":"25 & 26 mai 2027 · Marrakech","hero.cta1":"Découvrir la célébration","hero.cta2":"Confirmer ma présence",
-"story.eyebrow":"Notre histoire","story.title":"Un nouveau chapitre, à Marrakech","story.p1":"Après toutes ces années partagées, nous avons choisi Marrakech pour célébrer entourés de nos familles et de nos proches.","story.p2":"Ce site est notre petit carnet de voyage : toutes les informations utiles pour profiter pleinement de ces journées, découvrir Marrakech et nous retrouver.",
-"celebration.eyebrow":"La célébration","celebration.title":"Deux journées à partager","celebration.lead":"Retrouvez ici le programme, les ambiances et les moments importants du mariage.",
-"day1.label":"Lundi","day1.title":"Soirée Touareg","day1.text":"Une première soirée chaleureuse autour d'une ambiance traditionnelle, d'un dîner convivial, de musique et de belles retrouvailles.",
-"day2.label":"Mardi","day2.title":"La célébration","day2.text":"La journée du mariage : cérémonie, cocktail, dîner, musique et soirée avec tous ceux que nous aimons.",
-"villa.eyebrow":"Notre lieu de célébration","villa.intro":"Dar Layyina est notre lieu de célébration à Marrakech. Ce n'est pas l'hébergement des invités. Pendant les temps libres, vous pourrez toutefois profiter de ses espaces et installations.",
-"villa.pool.title":"Piscines","villa.pool.text":"Deux espaces piscine pour se détendre entre les moments de la célébration.","villa.sports.title":"Sports & jeux","villa.sports.text":"Tennis, pétanque, ping-pong, basket et autres espaces pour profiter de la villa.","villa.well.title":"Bien-être","villa.well.text":"Hammam, sauna et massages : certaines prestations sont disponibles sur réservation et peuvent être payantes.",
-"marrakech.title":"À découvrir autour de la célébration","marrakech.lead":"Une sélection d'idées pour celles et ceux qui souhaitent prolonger le séjour.","marrakech.culture":"Culture & patrimoine","marrakech.cultureText":"Médina, palais, jardins, musées et souks.","marrakech.exp":"Expériences","marrakech.expText":"Agafay, Atlas, vallée de l'Ourika, montgolfière et autres activités.","marrakech.shop":"Souks & shopping","marrakech.shopText":"Artisanat, créations locales et souvenirs à rapporter.",
-"stay.eyebrow":"Votre séjour","stay.title":"Où séjourner","stay.lead":"Les hébergements sont organisés séparément du lieu de célébration. Vous trouverez ici des options à proximité de Dar Layyina.","stay.hotels":"Hôtels","stay.hotelsText":"Une sélection d'hôtels à proximité, à compléter avec nos recommandations.","stay.villas":"Villas","stay.villasText":"Pour celles et ceux qui souhaitent davantage d'espace et voyager en groupe.","stay.apartments":"Appartements","stay.apartmentsText":"Une alternative pratique pour organiser un séjour à plusieurs.",
-"menus.eyebrow":"Food & celebration","menus.title":"Les menus","menus.lead":"Les détails des menus pourront être ajustés au fil des préparatifs.","menu25.title":"Soirée traditionnelle Touareg","menu25.text":"Méchoui, couscous et douceurs, dans une ambiance chaleureuse inspirée de nos traditions.","menu25.amb":"Une soirée à partager","menu25.ambText":"Musique Touareg, tapis, coussins, tables basses et retrouvailles avant le grand jour.","menu26.title":"La célébration du mariage","menu26.text":"Cérémonie laïque, cocktail, dîner à table, musique et soirée dansante.","menu26.amb":"Une journée élégante","menu26.ambText":"Une atmosphère pensée pour célébrer ensemble, profiter du lieu et créer de beaux souvenirs.",
-"gallery.eyebrow":"Galerie","gallery.title":"Marrakech & Dar Layyina","gallery.lead":"Les premières images sont là pour vous donner un aperçu. D'autres photos de nous et du mariage seront ajoutées au fil des préparatifs.",
-"transport.eyebrow":"Se déplacer","transport.title":"Retour & transport","transport.lead":"Nous prévoyons de vous donner ici les informations pratiques pour rentrer facilement, notamment si la soirée se termine tard.","transport.shuttle":"Navette / minibus","transport.shuttleText":"Les horaires et points de départ seront indiqués ici dès qu'ils seront définitivement organisés.","transport.taxi":"Taxi","transport.taxiText":"Une solution pour réserver ou demander un taxi selon vos besoins, avec les informations de contact à venir.","transport.location":"Itinéraire","transport.locationText":"Les informations d'accès à Dar Layyina et les coordonnées utiles seront ajoutées ici.",
-"rsvp.eyebrow":"Réponse souhaitée","rsvp.title":"Confirmer votre présence","rsvp.lead":"Merci de remplir une réponse par foyer ou par invité selon votre invitation.",
-"form.first":"* Prénom","form.last":"* Nom","form.email":"* E-mail","form.phone":"* WhatsApp / téléphone","form.city":"Ville et pays de résidence","form.attend":"Présence","form.yes":"Oui, je serai là","form.no":"Non, malheureusement","form.adults":"Nombre d'adultes","form.children":"Nombre d'enfants","form.day25":"Présence le 25 mai","form.day26":"Présence le 26 mai","form.stay":"Hébergement souhaité","form.self":"Je m'organise moi-même","form.help":"J'aimerais recevoir des recommandations","form.transport":"Transport / retour","form.shuttle":"Je souhaite les informations de navette","form.taxi":"Je pourrais avoir besoin d'un taxi","form.none":"Je m'organise moi-même","form.diet":"Allergies, régime alimentaire ou informations importantes","form.message":"Un message pour nous","form.note":"Vos réponses nous aideront à préparer votre accueil. Les détails pourront être mis à jour ultérieurement.","form.submit":"Enregistrer ma réponse","form.success":"Après l'envoi, votre réponse sera enregistrée dans notre formulaire RSVP.","footer.text":"Marrakech · 25 & 26 mai 2027","footer.top":"Retour en haut"
-},
-en:{
-"nav.story":"Our story","nav.celebration":"The celebration","nav.villa":"The villa","nav.marrakech":"Marrakech","nav.stay":"Where to stay","nav.gallery":"Gallery","nav.menus":"Menus","nav.transport":"Transport","nav.rsvp":"RSVP",
-"hero.kicker":"Our story continues in Marrakech","hero.date":"25 & 26 May 2027 · Marrakech","hero.cta1":"Discover the celebration","hero.cta2":"RSVP",
-"story.eyebrow":"Our story","story.title":"A new chapter, in Marrakech","story.p1":"After all these years together, we chose Marrakech to celebrate surrounded by our families and loved ones.","story.p2":"This website is our little travel guide: useful information to enjoy these days, discover Marrakech and be together.",
-"celebration.eyebrow":"The celebration","celebration.title":"Two days to share","celebration.lead":"Find the programme, atmosphere and key moments of the wedding here.",
-"day1.label":"Monday","day1.title":"Tuareg evening","day1.text":"A warm first evening with a traditional atmosphere, a convivial dinner, music and beautiful reunions.",
-"day2.label":"Tuesday","day2.title":"The wedding celebration","day2.text":"Wedding day: ceremony, cocktail, dinner, music and an evening with everyone we love.",
-"villa.eyebrow":"Our celebration venue","villa.intro":"Dar Layyina is our celebration venue in Marrakech. It is not the guests' accommodation. During free time, however, you are welcome to enjoy its spaces and facilities.",
-"villa.pool.title":"Pools","villa.pool.text":"Two pool areas for relaxing between celebration moments.","villa.sports.title":"Sports & games","villa.sports.text":"Tennis, pétanque, table tennis, basketball and more.","villa.well.title":"Wellness","villa.well.text":"Hammam, sauna and massages: some services require booking and may be paid.",
-"marrakech.title":"Discover around the celebration","marrakech.lead":"Ideas for those who would like to extend their stay.","marrakech.culture":"Culture & heritage","marrakech.cultureText":"Medina, palaces, gardens, museums and souks.","marrakech.exp":"Experiences","marrakech.expText":"Agafay, Atlas, Ourika Valley, hot-air ballooning and more.","marrakech.shop":"Souks & shopping","marrakech.shopText":"Crafts, local creations and souvenirs.",
-"stay.eyebrow":"Your stay","stay.title":"Where to stay","stay.lead":"Accommodation is arranged separately from the celebration venue. Here you will find options near Dar Layyina.","stay.hotels":"Hotels","stay.hotelsText":"Nearby hotel options, to be completed with our recommendations.","stay.villas":"Villas","stay.villasText":"For those who want more space or are travelling as a group.","stay.apartments":"Apartments","stay.apartmentsText":"A practical option for sharing a stay.",
-"menus.eyebrow":"Food & celebration","menus.title":"The menus","menus.lead":"Menu details may be adjusted as preparations continue.","menu25.title":"Traditional Tuareg evening","menu25.text":"Mechoui, couscous and sweets in a warm atmosphere inspired by our traditions.","menu25.amb":"An evening to share","menu25.ambText":"Tuareg music, rugs, cushions, low tables and reunions before the big day.","menu26.title":"The wedding celebration","menu26.text":"Laic ceremony, cocktail, seated dinner, music and dancing.","menu26.amb":"An elegant day","menu26.ambText":"An atmosphere designed to celebrate together, enjoy the venue and make memories.",
-"gallery.eyebrow":"Gallery","gallery.title":"Marrakech & Dar Layyina","gallery.lead":"These first images give you a glimpse. More photos of us and the wedding will be added as preparations continue.",
-"transport.eyebrow":"Getting around","transport.title":"Return & transport","transport.lead":"We will provide practical information here to make getting back easy, especially if the evening ends late.","transport.shuttle":"Shuttle / minibus","transport.shuttleText":"Times and pick-up points will be added once confirmed.","transport.taxi":"Taxi","transport.taxiText":"A way to request or book a taxi, with contact details to come.","transport.location":"Directions","transport.locationText":"Access information for Dar Layyina and useful coordinates will be added here.",
-"rsvp.eyebrow":"Kindly reply","rsvp.title":"Confirm your attendance","rsvp.lead":"Please submit one response per household or guest, depending on your invitation.",
-"form.first":"* First name","form.last":"* Last name","form.email":"* Email","form.phone":"* WhatsApp / phone","form.city":"City and country of residence","form.attend":"Attendance","form.yes":"Yes, I will be there","form.no":"No, unfortunately","form.adults":"Number of adults","form.children":"Number of children","form.day25":"Attending 25 May","form.day26":"Attending 26 May","form.stay":"Accommodation","form.self":"I will arrange it myself","form.help":"I would like recommendations","form.transport":"Transport / return","form.shuttle":"I would like shuttle information","form.taxi":"I may need a taxi","form.none":"I will arrange it myself","form.diet":"Allergies, dietary requirements or important information","form.message":"A message for us","form.note":"Your answers will help us prepare your welcome. Details can be updated later.","form.submit":"Save my RSVP","form.success":"After submitting, your response will be recorded in our RSVP form.","footer.text":"Marrakech · 25 & 26 May 2027","footer.top":"Back to top"
-},
-ar:{
-"nav.story":"قصتنا","nav.celebration":"الاحتفال","nav.villa":"الفيلا","nav.marrakech":"مراكش","nav.stay":"الإقامة","nav.gallery":"الصور","nav.menus":"القوائم","nav.transport":"التنقل","nav.rsvp":"تأكيد الحضور",
-"hero.kicker":"نواصل قصتنا في مراكش","hero.date":"25 و26 مايو 2027 · مراكش","hero.cta1":"اكتشفوا الاحتفال","hero.cta2":"تأكيد الحضور",
-"story.eyebrow":"قصتنا","story.title":"فصل جديد في مراكش","story.p1":"بعد كل هذه السنوات التي جمعَتنا، اخترنا مراكش للاحتفال مع عائلتنا وأحبائنا.","story.p2":"هذا الموقع هو دليلنا الصغير للرحلة: معلومات مفيدة للاستمتاع بهذه الأيام واكتشاف مراكش والالتقاء معاً.",
-"celebration.eyebrow":"الاحتفال","celebration.title":"يومان للمشاركة والفرح","celebration.lead":"هنا تجدون البرنامج والأجواء وأهم لحظات الزفاف.",
-"day1.label":"الاثنين","day1.title":"أمسية طوارقية","day1.text":"أمسية دافئة بأجواء تقليدية وعشاء ودي وموسيقى ولقاءات جميلة.",
-"day2.label":"الثلاثاء","day2.title":"احتفال الزفاف","day2.text":"يوم الزفاف: مراسم، كوكتيل، عشاء، موسيقى وسهرة مع من نحب.",
-"villa.eyebrow":"مكان الاحتفال","villa.intro":"دار ليّينة هي مكان احتفالنا في مراكش، وليست مكان إقامة الضيوف. وخلال أوقات الفراغ يمكنكم الاستمتاع بمرافقها ومساحاتها.",
-"villa.pool.title":"المسابح","villa.pool.text":"مساحتان للمسبح للاسترخاء بين فقرات الاحتفال.","villa.sports.title":"الرياضة والألعاب","villa.sports.text":"تنس، بيتانك، تنس الطاولة، كرة السلة وغيرها.","villa.well.title":"الاسترخاء والعافية","villa.well.text":"حمّام، ساونا وجلسات تدليك؛ بعض الخدمات تحتاج إلى حجز وقد تكون مدفوعة.",
-"marrakech.title":"اكتشفوا ما حول الاحتفال","marrakech.lead":"أفكار لمن يرغب في تمديد إقامته في مراكش.","marrakech.culture":"الثقافة والتراث","marrakech.cultureText":"المدينة القديمة والقصور والحدائق والمتاحف والأسواق.","marrakech.exp":"التجارب","marrakech.expText":"صحراء أغافاي والأطلس ووادي أوريكا والمنطاد وغيرها.","marrakech.shop":"الأسواق والتسوق","marrakech.shopText":"الحرف والصناعات المحلية والهدايا التذكارية.",
-"stay.eyebrow":"إقامتكم","stay.title":"أين تقيمون","stay.lead":"الإقامة منفصلة عن مكان الاحتفال. ستجدون هنا خيارات قريبة من دار ليّينة.","stay.hotels":"فنادق","stay.hotelsText":"خيارات من الفنادق القريبة سنكملها بتوصياتنا.","stay.villas":"فيلات","stay.villasText":"لمن يرغب في مساحة أكبر أو السفر ضمن مجموعة.","stay.apartments":"شقق","stay.apartmentsText":"خيار عملي للإقامة معاً.",
-"menus.eyebrow":"الطعام والاحتفال","menus.title":"القوائم","menus.lead":"يمكن تعديل تفاصيل القوائم مع تقدم التحضيرات.","menu25.title":"الأمسية الطوارقية التقليدية","menu25.text":"مشوي وكسكس وحلويات في أجواء دافئة مستوحاة من تقاليدنا.","menu25.amb":"أمسية للمشاركة","menu25.ambText":"موسيقى طوارقية وسجاد ووسائد وطاولات منخفضة ولقاءات قبل اليوم الكبير.","menu26.title":"احتفال الزفاف","menu26.text":"مراسم مدنية، كوكتيل، عشاء على الطاولات، موسيقى ورقص.","menu26.amb":"يوم أنيق","menu26.ambText":"أجواء صُممت للاحتفال معاً والاستمتاع بالمكان وصنع ذكريات جميلة.",
-"gallery.eyebrow":"الصور","gallery.title":"مراكش ودار ليّينة","gallery.lead":"هذه الصور الأولى تمنحكم لمحة عن المكان. سنضيف صوراً أخرى لنا وللزفاف مع تقدم التحضيرات.",
-"transport.eyebrow":"التنقل","transport.title":"العودة والتنقل","transport.lead":"سنضع هنا المعلومات العملية للعودة بسهولة، خاصة إذا انتهت السهرة في وقت متأخر.","transport.shuttle":"حافلة / ميني باص","transport.shuttleText":"ستضاف المواعيد ونقاط الانطلاق بعد تأكيدها.","transport.taxi":"تاكسي","transport.taxiText":"طريقة لطلب أو حجز سيارة أجرة، وستضاف بيانات الاتصال لاحقاً.","transport.location":"الوصول","transport.locationText":"ستضاف معلومات الوصول إلى دار ليّينة والإحداثيات المفيدة هنا.",
-"rsvp.eyebrow":"يرجى الرد","rsvp.title":"تأكيد الحضور","rsvp.lead":"يرجى إرسال رد واحد لكل أسرة أو لكل ضيف حسب الدعوة.",
-"form.first":"* الاسم الأول","form.last":"* اسم العائلة","form.email":"* البريد الإلكتروني","form.phone":"* واتساب / الهاتف","form.city":"مدينة ودولة الإقامة","form.attend":"الحضور","form.yes":"نعم، سأحضر","form.no":"لا، للأسف","form.adults":"عدد البالغين","form.children":"عدد الأطفال","form.day25":"الحضور يوم 25 مايو","form.day26":"الحضور يوم 26 مايو","form.stay":"الإقامة","form.self":"سأنظمها بنفسي","form.help":"أرغب في الحصول على توصيات","form.transport":"التنقل / العودة","form.shuttle":"أرغب في معلومات الحافلة","form.taxi":"قد أحتاج إلى سيارة أجرة","form.none":"سأنظمها بنفسي","form.diet":"الحساسيات أو النظام الغذائي أو معلومات مهمة","form.message":"رسالة لنا","form.note":"ستساعدنا إجاباتكم على الاستعداد لاستقبالكم. يمكن تحديث التفاصيل لاحقاً.","form.submit":"حفظ الرد","form.success":"بعد الإرسال سيتم تسجيل ردكم في نموذج تأكيد الحضور.","footer.text":"مراكش · 25 و26 مايو 2027","footer.top":"العودة إلى الأعلى"
-}
+fr:{nav_story:"Notre histoire",nav_days:"Les deux jours",nav_practical:"Votre séjour",discover:"Découvrir",hero_note:"Deux jours pour célébrer notre amour, nos familles et nos cultures, sous le soleil de Marrakech.",story_kicker:"Notre histoire",story_title:"Un mariage qui nous ressemble.",story_big:"Nous avons choisi Marrakech pour réunir ceux que nous aimons autour de deux journées faites de chaleur, de traditions, de fête et de souvenirs.",story_small:"Ce site évoluera avec nos préparatifs. Les horaires, menus et informations pratiques seront mis à jour au fur et à mesure de leur confirmation.",days_kicker:"25 & 26 mai 2027",days_title:"Deux jours, deux atmosphères.",days_note:"Le programme ci-dessous présente l’esprit des deux célébrations. Les horaires définitifs seront annoncés une fois le déroulé validé.",day1_title:"La soirée traditionnelle",day2_title:"La grande célébration",moment:"Moments",atmosphere:"Ambiance",dinner:"Dîner",evening:"Soirée",day1_atmo:"Touareg · musique · partage",day1_food:"Cuisine traditionnelle & convivialité",day2_moments:"Cérémonie laïque · cocktail",day2_atmo:"Élégante · chaleureuse · festive",day2_evening:"Dîner · musique · danse · surprises",villa_tag:"Notre maison de fête pendant deux jours.",villa_title:"Un lieu pour se retrouver.",villa_text:"Dar Layyina accueillera nos deux célébrations à Marrakech. C’est ici que nous partagerons les grands moments du 25 et du 26 mai.",outdoor:"Espaces extérieurs",villa_note:"Dar Layyina est notre lieu de célébration, pas l’hébergement des invités. Une sélection d’hôtels, villas et appartements sera proposée séparément.",marrakech_title:"Prolongez le voyage.",marrakech_text:"Nous voulons aussi que ces quelques jours soient une parenthèse de vacances. Ici, vous retrouverez nos adresses, idées et conseils pour profiter de Marrakech à votre rythme.",culture:"Culture & patrimoine",culture_p:"Palais, jardins, médina et lieux emblématiques.",souks:"Souks & artisanat",souks_p:"Textiles, objets, couleurs et savoir-faire.",wellness:"Bien-être",wellness_p:"Hammams, spas et moments de détente.",experiences:"Expériences",experiences_p:"Désert, coucher de soleil et excursions.",restaurants:"Nos adresses",restaurants_p:"Restaurants et lieux que nous sélectionnerons.",practical_kicker:"Préparer votre séjour",practical_title:"Tout ce qu’il faut, sans surcharge.",practical_text:"Les informations pratiques seront affinées à mesure que les réservations et la logistique seront confirmées.",stay:"Où séjourner",stay_p:"Hôtels, villas et appartements proches de Dar Layyina, pour différents budgets.",transport:"Transports",transport_p:"Les informations concernant navettes, transferts et retours seront publiées ici dès confirmation.",menus:"Menus",menus_p:"Les menus des deux journées seront ajoutés lorsqu’ils seront finalisés avec notre traiteur.",rsvp_title:"On compte sur vous.",rsvp_text:"Merci de nous transmettre votre réponse et les informations utiles à l’organisation. Si votre situation change, nous pourrons ajuster votre réponse plus tard.",first:"Prénom *",last:"Nom *",residence:"Ville & pays de résidence",attendance:"Présence",yes:"Oui, je serai présent(e)",no:"Non, je ne pourrai pas venir",maybe:"Je ne suis pas encore certain(e)",guests:"Nombre de personnes",guest_names:"Nom(s) des accompagnants",attire:"Tenue traditionnelle Touareg",later:"Je déciderai plus tard",diet:"Allergies / régime alimentaire",message:"Un message pour nous",submit:"Enregistrer ma réponse",form_note:"Formulaire en mode démonstration — connexion Formspree/Google Forms à finaliser avant mise en ligne définitive.",footer_note:"Ce site continuera d’évoluer jusqu’au mariage."},
+en:{nav_story:"Our story",nav_days:"The two days",nav_practical:"Your stay",discover:"Discover",hero_note:"Two days to celebrate our love, our families and our cultures under the Marrakech sun.",story_kicker:"Our story",story_title:"A wedding that feels like us.",story_big:"We chose Marrakech to bring together the people we love for two days filled with warmth, traditions, celebration and memories.",story_small:"This website will evolve throughout the planning. Timings, menus and practical information will be updated as soon as they are confirmed.",days_kicker:"25 & 26 May 2027",days_title:"Two days, two atmospheres.",days_note:"The programme below shows the spirit of both celebrations. Final timings will be shared once the schedule is confirmed.",day1_title:"The traditional evening",day2_title:"The main celebration",moment:"Moments",atmosphere:"Atmosphere",dinner:"Dinner",evening:"Evening",day1_atmo:"Touareg · music · sharing",day1_food:"Traditional food & conviviality",day2_moments:"Symbolic ceremony · cocktail",day2_atmo:"Elegant · warm · festive",day2_evening:"Dinner · music · dancing · surprises",villa_tag:"Our celebration home for two days.",villa_title:"A place to gather.",villa_text:"Dar Layyina will host both of our celebrations in Marrakech, where we will share the highlights of 25 and 26 May.",outdoor:"Outdoor spaces",villa_note:"Dar Layyina is our celebration venue, not guest accommodation. A separate selection of nearby hotels, villas and apartments will be shared.",marrakech_title:"Extend the journey.",marrakech_text:"We also want these few days to feel like a holiday. Here you will find our addresses, ideas and tips to enjoy Marrakech at your own pace.",culture:"Culture & heritage",culture_p:"Palaces, gardens, medina and iconic places.",souks:"Souks & crafts",souks_p:"Textiles, objects, colours and craftsmanship.",wellness:"Wellness",wellness_p:"Hammams, spas and time to unwind.",experiences:"Experiences",experiences_p:"Desert, sunsets and excursions.",restaurants:"Our addresses",restaurants_p:"Restaurants and places we will select for you.",practical_kicker:"Plan your stay",practical_title:"Everything you need, without the clutter.",practical_text:"Practical information will be refined as bookings and logistics are confirmed.",stay:"Where to stay",stay_p:"Hotels, villas and apartments near Dar Layyina for different budgets.",transport:"Transport",transport_p:"Shuttle, transfer and return information will be published once confirmed.",menus:"Menus",menus_p:"Menus for both days will be added once finalised with our caterer.",rsvp_title:"We are counting on you.",rsvp_text:"Please send us your RSVP and the information we need for planning. If your plans change, we can adjust your response later.",first:"First name *",last:"Last name *",residence:"City & country of residence",attendance:"Attendance",yes:"Yes, I will attend",no:"No, I cannot attend",maybe:"I am not sure yet",guests:"Number of people",guest_names:"Names of accompanying guests",attire:"Traditional Touareg attire",later:"I will decide later",diet:"Allergies / dietary requirements",message:"A message for us",submit:"Save my response",form_note:"Demo mode — Formspree/Google Forms connection to be finalised before the final launch.",footer_note:"This website will keep evolving until the wedding."},
+ar:{nav_story:"قصتنا",nav_days:"اليومان",nav_practical:"إقامتكم",discover:"اكتشفوا",hero_note:"يومان نحتفل فيهما بحبنا وعائلتينا وثقافتينا تحت شمس مراكش.",story_kicker:"قصتنا",story_title:"زفاف يشبهنا.",story_big:"اخترنا مراكش لنجمع من نحب حول يومين من الدفء والتقاليد والفرح والذكريات.",story_small:"سيتطور هذا الموقع مع التحضيرات، وسيتم تحديث المواعيد والقوائم والمعلومات العملية فور تأكيدها.",days_kicker:"25 و26 مايو 2027",days_title:"يومان، أجواء مختلفة.",days_note:"يعرض البرنامج روح الاحتفالين، أما المواعيد النهائية فسيتم الإعلان عنها بعد اعتماد الجدول.",day1_title:"الأمسية التقليدية",day2_title:"الاحتفال الكبير",moment:"اللحظات",atmosphere:"الأجواء",dinner:"العشاء",evening:"السّهرة",day1_atmo:"طوارق · موسيقى · مشاركة",day1_food:"مطبخ تقليدي وأجواء ودية",day2_moments:"مراسم رمزية · كوكتيل",day2_atmo:"أنيقة · دافئة · احتفالية",day2_evening:"عشاء · موسيقى · رقص · مفاجآت",villa_tag:"مكان احتفالنا ليومين.",villa_title:"مكان يجمعنا.",villa_text:"ستستضيف دار لايينا احتفالينا في مراكش يومي 25 و26 مايو.",outdoor:"المساحات الخارجية",villa_note:"دار لايينا هي مكان الاحتفال وليست مكان إقامة الضيوف. سنشارك خيارات فنادق وفيلات وشقق قريبة بشكل منفصل.",marrakech_title:"استمتعوا بالرحلة.",marrakech_text:"نريد أيضاً أن تكون هذه الأيام عطلة جميلة. ستجدون هنا اقتراحاتنا ونصائحنا للاستمتاع بمراكش.",culture:"الثقافة والتراث",culture_p:"قصور وحدائق والمدينة القديمة وأماكن مميزة.",souks:"الأسواق والحرف",souks_p:"أقمشة وألوان وصناعات تقليدية.",wellness:"الاسترخاء",wellness_p:"حمامات وسبا ولحظات راحة.",experiences:"تجارب",experiences_p:"الصحراء والغروب والرحلات.",restaurants:"عناويننا",restaurants_p:"مطاعم وأماكن سنختارها لكم.",practical_kicker:"حضّروا إقامتكم",practical_title:"كل ما تحتاجونه ببساطة.",practical_text:"سيتم تحديث المعلومات العملية مع تأكيد الحجوزات والتنظيم.",stay:"أماكن الإقامة",stay_p:"فنادق وفيلات وشقق قريبة من دار لايينا وبميزانيات مختلفة.",transport:"التنقل",transport_p:"سيتم نشر معلومات الحافلات والنقل والعودة بعد تأكيدها.",menus:"القوائم",menus_p:"ستضاف قوائم اليومين بعد اعتمادها مع متعهد الطعام.",rsvp_title:"ننتظركم.",rsvp_text:"يرجى إرسال تأكيد الحضور والمعلومات اللازمة للتنظيم، ويمكن تعديل الإجابة لاحقاً إذا تغيرت خططكم.",first:"الاسم الأول *",last:"اسم العائلة *",residence:"المدينة وبلد الإقامة",attendance:"الحضور",yes:"نعم، سأحضر",no:"لن أتمكن من الحضور",maybe:"لست متأكداً بعد",guests:"عدد الأشخاص",guest_names:"أسماء المرافقين",attire:"زي طوارقي تقليدي",later:"سأقرر لاحقاً",diet:"الحساسية / النظام الغذائي",message:"رسالة لنا",submit:"حفظ الرد",form_note:"الوضع التجريبي — سيتم ربط النموذج قبل الإطلاق النهائي.",footer_note:"سيستمر هذا الموقع في التطور حتى موعد الزفاف."}
 };
-
-const modalData={
-fr:{
-pool:`<div class="eyebrow">Dar Layyina</div><h2>Piscines & jardin</h2><p>Deux piscines sont disponibles dans la villa : une grande piscine extérieure et une piscine plus intime. L'accès est présenté ici comme un moment de détente pendant les temps libres.</p><div class="feature"><article class="feature-card"><img src="assets/pool-main.jpeg"><div class="pad"><h3>Grande piscine</h3><p>Un espace généreux pour se retrouver et profiter du soleil.</p></div></article><article class="feature-card"><img src="assets/pool-sunset.jpeg"><div class="pad"><h3>Pause au bord de l'eau</h3><p>Un autre aperçu de la villa et de ses espaces de détente.</p></div></article></div>`,
-sports:`<div class="eyebrow">Dar Layyina</div><h2>Sports & jeux</h2><p>Pour celles et ceux qui souhaitent bouger pendant les temps libres : tennis, pétanque, ping-pong, basket et autres espaces.</p><div class="gallery"><figure><img src="assets/tennis.jpeg"></figure><figure><img src="assets/petanque.jpeg"></figure><figure><img src="assets/ping-pong.jpeg"></figure><figure><img src="assets/basketball.jpeg"></figure><figure><img src="assets/golf.jpeg"></figure></div>`,
-wellness:`<div class="eyebrow">Dar Layyina</div><h2>Bien-être</h2><p>La villa propose plusieurs espaces de détente. Certaines prestations, comme les massages, peuvent être payantes et nécessitent une réservation préalable.</p><div class="feature"><article class="feature-card"><img src="assets/hammam.jpeg"><div class="pad"><h3>Hammam</h3><p>Un espace inspiré du rituel marocain du bien-être.</p></div></article><article class="feature-card"><img src="assets/sauna.jpeg"><div class="pad"><h3>Sauna</h3><p>Une pause de chaleur sèche et de relaxation.</p></div></article><article class="feature-card"><img src="assets/massage.jpeg"><div class="pad"><h3>Massages</h3><p>À réserver selon les disponibilités et les tarifs de la villa.</p></div></article></div>`,
-culture:`<div class="eyebrow">Marrakech</div><h2>Culture & patrimoine</h2><p>La médina, les souks, les palais, les jardins et les musées font partie des incontournables à découvrir pendant votre séjour.</p><p>Nous ajouterons progressivement nos adresses et liens préférés.</p>`,
-experiences:`<div class="eyebrow">Marrakech</div><h2>Expériences</h2><p>Selon vos envies : désert d'Agafay, vallée de l'Ourika, Atlas, balade en dromadaire, dîner sous les étoiles ou vol en montgolfière.</p><p>Les activités pourront être ajoutées ici avec leurs liens de réservation lorsqu'elles seront sélectionnées.</p>`,
-shopping:`<div class="eyebrow">Marrakech</div><h2>Souks & shopping</h2><p>Artisanat, poterie, céramique, broderie, cuir, tapis et créations locales : prévoyez un peu de place dans vos valises.</p>`,
-hotels:`<div class="eyebrow">Votre séjour</div><h2>Hôtels</h2><p>Cette page est volontairement prête à être complétée : nous ajouterons ici les hôtels recommandés à proximité de Dar Layyina, avec leurs liens et les informations utiles.</p>`,
-villas:`<div class="eyebrow">Votre séjour</div><h2>Villas</h2><p>Une sélection de villas pourra être ajoutée ici pour les familles et groupes qui souhaitent séjourner ensemble.</p>`,
-apartments:`<div class="eyebrow">Votre séjour</div><h2>Appartements</h2><p>Des options d'appartements pourront être ajoutées ici, avec des liens directs pour faciliter vos recherches.</p>`
-},
-en:{},
-ar:{}
-};
-modalData.en=Object.fromEntries(Object.entries(modalData.fr).map(([k,v])=>[k,v.replaceAll("Dar Layyina","Dar Layyina")]));
-modalData.ar=modalData.en;
-
-function setLang(lang){
- const dict=T[lang]||T.fr;
- document.documentElement.lang=lang; document.documentElement.dir=lang==="ar"?"rtl":"ltr";
- document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(dict[key]!==undefined)el.textContent=dict[key]});
- document.querySelectorAll(".lang").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
- localStorage.setItem("mf-lang",lang);
-}
-document.querySelectorAll(".lang").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
-document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("nav").classList.toggle("open"));
-document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("nav").classList.remove("open")));
-document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
- document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");
- document.querySelectorAll(".panel").forEach(x=>x.classList.remove("active"));document.getElementById(t.dataset.tab).classList.add("active");
-}));
-const modal=document.getElementById("modal"), modalContent=document.getElementById("modalContent");
-document.querySelectorAll("[data-modal]").forEach(el=>el.addEventListener("click",()=>{
- const lang=localStorage.getItem("mf-lang")||"fr"; modalContent.innerHTML=modalData[lang][el.dataset.modal]||modalData.fr[el.dataset.modal]; modal.classList.add("open");document.body.style.overflow="hidden";
-}));
-function closeModal(){modal.classList.remove("open");document.body.style.overflow=""}
-document.getElementById("closeModal").addEventListener("click",closeModal);
-modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
-setLang(localStorage.getItem("mf-lang")||"fr");
+function setLang(lang){document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(T[lang]&&T[lang][k])el.textContent=T[lang][k]});document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));localStorage.setItem('mf_lang',lang)}
+document.querySelectorAll('.langs button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+function toggleMenu(){document.getElementById('mobilePanel').classList.toggle('open')}
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',scrollY>40));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+function handleRSVP(e){e.preventDefault();alert(document.documentElement.lang==='fr'?"Le design du RSVP est prêt. Nous connecterons l’envoi définitif avant la mise en ligne.":document.documentElement.lang==='ar'?"تصميم نموذج التأكيد جاهز. سيتم ربط الإرسال النهائي قبل نشر الموقع.":"The RSVP design is ready. We will connect the final submission before launch.")}
+setLang(localStorage.getItem('mf_lang')||'fr');
 </script>
 </body>
 </html>
