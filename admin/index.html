@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#132238" />
+<title>Morwane & Fatima — Wedding Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#132238;--indigo:#173f75;--blue:#275d86;--green:#47755b;--terra:#b9684f;--sand:#efe2cf;--cream:#fbf7f0;--ivory:#fffdf9;--gold:#b8955d;--muted:#6f766f;--line:rgba(19,34,56,.12);--danger:#9d4b48;--shadow:0 18px 55px rgba(19,34,56,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:260px 1fr}.sidebar{background:var(--ink);color:#fff;padding:28px 20px;position:sticky;top:0;height:100vh}.brand{font-family:Italiana,serif;font-size:28px;line-height:1.05;margin-bottom:6px}.sub{font:600 10px DM Sans;letter-spacing:.2em;text-transform:uppercase;color:#dbc59d;margin-bottom:34px}.nav{display:grid;gap:8px}.nav button{border:0;background:transparent;color:rgba(255,255,255,.72);text-align:left;padding:12px 14px;border-radius:14px}.nav button.active,.nav button:hover{background:rgba(255,255,255,.1);color:#fff}.sidefoot{position:absolute;bottom:26px;left:20px;right:20px;font-size:11px;line-height:1.6;color:rgba(255,255,255,.55)}.main{padding:34px 4vw 70px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:32px}.eyebrow{font:600 10px DM Sans;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}h1{font:400 clamp(40px,5vw,66px) Italiana;margin:6px 0 0}.profile{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:999px}.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--indigo);color:#fff;font-weight:600}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}.metric .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.metric .value{font:400 38px Italiana;margin-top:6px}.metric .hint{font-size:11px;color:var(--muted);margin-top:4px}.two{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:18px}.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.section-title h2{font:400 28px Italiana;margin:0}.pill{font-size:10px;padding:7px 10px;border-radius:999px;background:var(--cream);color:var(--muted)}.progress{height:10px;background:#eee8df;border-radius:999px;overflow:hidden;margin:15px 0 8px}.progress span{display:block;height:100%;width:42%;background:var(--indigo)}.rows{display:grid;gap:10px}.row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.row strong{font-size:13px}.row small{display:block;color:var(--muted);margin-top:4px}.status{font-size:10px;padding:7px 9px;border-radius:999px;background:#eef3ef;color:var(--green)}.status.wait{background:#f4ede1;color:#8c6b34}.status.todo{background:#f6e8e7;color:var(--danger)}.panel{display:none}.panel.active{display:block}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}.toolbar input,.toolbar select{border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 13px}.toolbar input{min-width:260px}.primary{border:0;background:var(--indigo);color:#fff;padding:11px 15px;border-radius:12px}.table-wrap{overflow:auto;background:#fff;border:1px solid var(--line);border-radius:20px}.table{width:100%;border-collapse:collapse;min-width:840px}.table th,.table td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left;font-size:12px}.table th{font:600 10px DM Sans;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:#fdfaf5}.tag{display:inline-block;padding:6px 8px;border-radius:999px;font-size:10px;background:#eef3ef;color:var(--green)}.tag.pending{background:#f4ede1;color:#8c6b34}.budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}.timeline{display:grid;gap:12px}.event{display:grid;grid-template-columns:90px 1fr;gap:15px;padding:15px;border:1px solid var(--line);border-radius:16px;background:#fff}.time{font:600 12px DM Sans;color:var(--gold)}.event strong{font-size:13px}.event small{display:block;color:var(--muted);margin-top:5px}.notice{background:#f4eadb;border:1px solid rgba(185,149,93,.25);padding:14px 16px;border-radius:16px;font-size:12px;line-height:1.6;margin-bottom:18px}.footer-note{margin-top:24px;color:var(--muted);font-size:11px;line-height:1.7}@media(max-width:980px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto}.sidefoot{display:none}.nav{grid-template-columns:repeat(4,1fr)}.nav button{text-align:center;padding:10px 6px;font-size:11px}.grid4{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}@media(max-width:640px){.main{padding:24px 16px 60px}.topbar{align-items:flex-start}.profile span{display:none}.grid4,.budget-grid{grid-template-columns:1fr 1fr}.nav{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.toolbar input{min-width:0;width:100%}.event{grid-template-columns:64px 1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">Morwane <span style="color:#d9bd8d">&</span> Fatima</div>
+    <div class="sub">Marrakech 2027 · Admin</div>
+    <div class="nav" id="nav">
+      <button class="active" data-panel="dashboard">Tableau de bord</button>
+      <button data-panel="guests">Invités & RSVP</button>
+      <button data-panel="budget">Budget</button>
+      <button data-panel="vendors">Prestataires</button>
+      <button data-panel="tasks">Tâches</button>
+      <button data-panel="program">Programme</button>
+    </div>
+    <div class="sidefoot">Prototype privé du tableau de bord.<br>Aucune donnée réelle d’invité n’est stockée ici.</div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <div><div class="eyebrow">Espace privé du couple</div><h1 id="pageTitle">Bonjour Fatima 🤍</h1></div>
+      <div class="profile"><div class="avatar">F</div><span style="font-size:12px">Fatima</span></div>
+    </div>
+
+    <section class="panel active" id="dashboard">
+      <div class="notice"><strong>Version prototype.</strong> Les chiffres ci-dessous sont des exemples pour visualiser le fonctionnement. Les vraies données seront reliées à une base sécurisée avant utilisation.</div>
+      <div class="grid4">
+        <div class="card metric"><div class="label">Invités estimés</div><div class="value">80</div><div class="hint">Adultes + enfants</div></div>
+        <div class="card metric"><div class="label">Confirmés</div><div class="value">42</div><div class="hint">52,5 % des invités</div></div>
+        <div class="card metric"><div class="label">En attente</div><div class="value">31</div><div class="hint">À relancer plus tard</div></div>
+        <div class="card metric"><div class="label">Refus</div><div class="value">7</div><div class="hint">Réponses reçues</div></div>
+      </div>
+      <div class="two">
+        <div class="card">
+          <div class="section-title"><h2>Budget mariage</h2><span class="pill">163 000 MAD</span></div>
+          <div style="font:400 34px Italiana">68 460 MAD utilisés</div>
+          <div class="progress"><span></span></div>
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted)"><span>42 % engagé</span><span>94 540 MAD disponibles</span></div>
+          <div class="rows" style="margin-top:18px">
+            <div class="row"><div><strong>Dar Layyina</strong><small>Acompte enregistré</small></div><span class="status">Payé</span></div>
+            <div class="row"><div><strong>Traiteur</strong><small>Menu et devis à finaliser</small></div><span class="status wait">En cours</span></div>
+            <div class="row"><div><strong>Photographe / vidéo</strong><small>Prestataire à confirmer</small></div><span class="status todo">À faire</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="section-title"><h2>Priorités</h2><span class="pill">Cette semaine</span></div>
+          <div class="rows">
+            <div class="row"><div><strong>Valider le traiteur</strong><small>Comparer le devis final et le menu</small></div><span class="status wait">Morwane & Fatima</span></div>
+            <div class="row"><div><strong>Finaliser le programme J1</strong><small>Horaires henné + arrivée invités</small></div><span class="status">Fatima</span></div>
+            <div class="row"><div><strong>Mettre à jour le RSVP</strong><small>Préparer la future base invités</small></div><span class="status">Site</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="guests">
+      <div class="section-title"><h2>Invités & RSVP</h2><button class="primary">+ Ajouter un invité</button></div>
+      <div class="toolbar"><input placeholder="Rechercher un invité…"><select><option>Tous les statuts</option><option>Confirmé</option><option>En attente</option><option>Refus</option></select><select><option>Toutes les familles</option><option>Famille Fatima</option><option>Famille Morwane</option><option>Amis</option></select></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>Invité</th><th>Groupe</th><th>RSVP</th><th>Adultes</th><th>Enfants</th><th>Repas / allergies</th><th>Hébergement</th></tr></thead><tbody>
+        <tr><td>Exemple · Amina</td><td>Famille Fatima</td><td><span class="tag">Confirmé</span></td><td>2</td><td>1</td><td>Sans allergie</td><td>À organiser</td></tr>
+        <tr><td>Exemple · Karim</td><td>Amis</td><td><span class="tag pending">En attente</span></td><td>1</td><td>0</td><td>—</td><td>Hôtel</td></tr>
+      </tbody></table></div>
+      <div class="footer-note">La version finale permettra d’ouvrir une fiche invité, modifier toutes ses réponses et synchroniser automatiquement le formulaire RSVP du site.</div>
+    </section>
+
+    <section class="panel" id="budget">
+      <div class="section-title"><h2>Budget</h2><button class="primary">+ Ajouter une dépense</button></div>
+      <div class="budget-grid"><div class="card metric"><div class="label">Budget disponible</div><div class="value">163k</div><div class="hint">MAD</div></div><div class="card metric"><div class="label">Engagé</div><div class="value">68.5k</div><div class="hint">MAD</div></div><div class="card metric"><div class="label">Restant</div><div class="value">94.5k</div><div class="hint">MAD</div></div></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>Catégorie</th><th>Prestataire</th><th>Prévu</th><th>Payé</th><th>Reste</th><th>Statut</th></tr></thead><tbody><tr><td>Lieu</td><td>Dar Layyina</td><td>—</td><td>19 777 MAD</td><td>—</td><td><span class="tag">Acompte</span></td></tr><tr><td>Wedding planner</td><td>Sunsational Bookings</td><td>23 850 MAD</td><td>—</td><td>—</td><td><span class="tag pending">Contrat</span></td></tr></tbody></table></div>
+    </section>
+
+    <section class="panel" id="vendors"><div class="section-title"><h2>Prestataires</h2><button class="primary">+ Ajouter</button></div><div class="grid4"><div class="card"><div class="eyebrow">Wedding planner</div><h3>Fatine · Sunsational</h3><p style="font-size:12px;color:var(--muted)">Contrat reçu · suivi budget et coordination.</p></div><div class="card"><div class="eyebrow">Lieu</div><h3>Dar Layyina</h3><p style="font-size:12px;color:var(--muted)">Réservé · célébrations des 25–26 mai.</p></div><div class="card"><div class="eyebrow">Traiteur</div><h3>Boulonor</h3><p style="font-size:12px;color:var(--muted)">Pressenti · devis/menu à finaliser.</p></div><div class="card"><div class="eyebrow">À choisir</div><h3>Photo & vidéo</h3><p style="font-size:12px;color:var(--muted)">Prestataire à confirmer.</p></div></div></section>
+
+    <section class="panel" id="tasks"><div class="section-title"><h2>Tâches</h2><button class="primary">+ Nouvelle tâche</button></div><div class="two"><div class="card"><div class="eyebrow">À faire</div><div class="rows"><div class="row"><div><strong>Valider le menu J2</strong><small>Responsables : Fatima & Morwane</small></div><span class="status todo">Haute</span></div><div class="row"><div><strong>Choisir photographe</strong><small>Comparer les propositions</small></div><span class="status wait">Moyenne</span></div></div></div><div class="card"><div class="eyebrow">En cours</div><div class="rows"><div class="row"><div><strong>Application admin</strong><small>Prototype en construction</small></div><span class="status">En cours</span></div></div></div></div></section>
+
+    <section class="panel" id="program"><div class="section-title"><h2>Programme des deux jours</h2><span class="pill">25–26 mai 2027</span></div><div class="two"><div class="card"><div class="eyebrow">25 mai · Traditionnel</div><div class="timeline" style="margin-top:15px"><div class="event"><div class="time">16:00</div><div><strong>Henné de la mariée</strong><small>Naqacha et préparation.</small></div></div><div class="event"><div class="time">17:00</div><div><strong>Henné de Morwane</strong><small>Henné aux pieds.</small></div></div><div class="event"><div class="time">18:00</div><div><strong>Arrivée des invités</strong><small>Accueil par les parents · fenêtre d’arrivée d’environ 1 heure.</small></div></div><div class="event"><div class="time">Soirée</div><div><strong>Célébration touarègue</strong><small>Guitares, tapis, poufs, dîner traditionnel et livre d’or.</small></div></div></div></div><div class="card"><div class="eyebrow">26 mai · Cérémonie & réception</div><div class="timeline" style="margin-top:15px"><div class="event"><div class="time">À fixer</div><div><strong>Cérémonie laïque</strong><small>Déroulé détaillé à compléter.</small></div></div><div class="event"><div class="time">Dîner</div><div><strong>Repas à table</strong><small>Service à l’assiette.</small></div></div><div class="event"><div class="time">Soirée</div><div><strong>DJ & piste de danse</strong><small>Son, lumière et réception.</small></div></div></div></div></div></section>
+  </main>
+</div>
+<script>
+const titles={dashboard:'Bonjour Fatima 🤍',guests:'Invités & RSVP',budget:'Budget du mariage',vendors:'Prestataires',tasks:'Tâches & échéances',program:'Programme · 25–26 mai'};
+document.querySelectorAll('#nav button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('#nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.getElementById(btn.dataset.panel).classList.add('active');document.getElementById('pageTitle').textContent=titles[btn.dataset.panel];window.scrollTo({top:0,behavior:'smooth'});}));
+</script>
+</body>
+</html>
