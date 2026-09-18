@@ -100,5 +100,6 @@ $('#saveRsvpStatus').onclick=async()=>{if(!state.selected)return;await api('/api
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 (async()=>{document.body.classList.add('loading');try{await Promise.all([loadMe(),loadDashboard(),loadInvitations()])}catch(err){toast(err.message)}finally{document.body.classList.remove('loading')}})();
 </script>
+<script src="/admin/phase2.js"></script>
 </body>
 </html>
