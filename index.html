@@ -193,9 +193,92 @@ footer{background:#0c1d2d;color:#dfe4e6;padding:70px 0 34px}
  .footer-top,.footer-bottom{display:block}.footer-date{text-align:left;margin-top:20px}.footer-bottom div+div{margin-top:9px}
 }
 @media(max-width:520px){.travel-grid{grid-template-columns:1fr}.travel-card.big{grid-column:auto}.hero-date{font-size:28px}.day-list div{display:block}.day-list span:last-child{text-align:left;display:block;margin-top:3px}.villa-photo{height:430px}}
+
+/* M&F — invitation entrance */
+.invitation-gate{
+  position:fixed;inset:0;z-index:9999;display:grid;place-items:center;
+  background:#eee8dc;overflow:hidden;transition:opacity .75s ease,visibility .75s ease;
+}
+.invitation-gate::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 12% 18%,rgba(255,255,255,.7),transparent 24%),
+    radial-gradient(circle at 82% 78%,rgba(96,105,70,.09),transparent 28%);
+}
+.invitation-stage{
+  position:relative;width:min(980px,94vw);aspect-ratio:3/2;
+  display:grid;place-items:center;transform:translateY(1vh);
+  transition:transform .75s cubic-bezier(.2,.8,.2,1),opacity .6s ease;
+}
+.invitation-photo{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+  filter:drop-shadow(0 28px 42px rgba(44,48,34,.18));
+}
+.invitation-fallback{
+  width:min(800px,88vw);aspect-ratio:1.56/1;border-radius:8px;
+  background:
+    linear-gradient(145deg,transparent 49.4%,rgba(73,79,55,.16) 50%,transparent 50.6%),
+    linear-gradient(215deg,transparent 49.4%,rgba(73,79,55,.14) 50%,transparent 50.6%),
+    linear-gradient(180deg,#8b9074,#747a5e);
+  box-shadow:0 30px 65px rgba(48,52,38,.22),inset 0 1px rgba(255,255,255,.28);
+  position:relative;overflow:hidden;
+}
+.invitation-fallback::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:58%;
+  clip-path:polygon(0 0,100% 0,50% 100%);
+  background:linear-gradient(180deg,#92977c,#7d8267);
+  filter:drop-shadow(0 4px 6px rgba(51,55,40,.18));
+}
+.invitation-seal{
+  position:absolute;left:54%;top:54%;transform:translate(-50%,-50%);
+  width:clamp(78px,10vw,118px);aspect-ratio:1;border:0;border-radius:50%;
+  cursor:pointer;z-index:4;display:grid;place-items:center;
+  background:radial-gradient(circle at 38% 30%,#f6ecd1 0 18%,#d8bf86 62%,#b4965d 100%);
+  color:#6c5a35;font-family:"Italiana",serif;font-size:clamp(22px,3.2vw,38px);
+  box-shadow:0 8px 19px rgba(58,50,34,.28),inset 0 0 0 2px rgba(255,255,255,.28);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.invitation-seal::after{
+  content:"";position:absolute;inset:-10px;border:1px solid rgba(184,149,93,.45);
+  border-radius:50%;animation:mfSealPulse 2.3s ease-in-out infinite;
+}
+.invitation-seal:hover,.invitation-seal:focus-visible{
+  transform:translate(-50%,-50%) scale(1.055);
+  box-shadow:0 12px 28px rgba(58,50,34,.34),inset 0 0 0 2px rgba(255,255,255,.35);
+}
+.invitation-stage.has-image .invitation-fallback{opacity:0}
+.invitation-stage.has-image .invitation-seal{
+  background:transparent;color:transparent;box-shadow:none;
+}
+.invitation-stage.has-image .invitation-seal::after{
+  inset:10%;border-color:rgba(255,245,218,.52);
+}
+.invitation-gate.opening{opacity:0;visibility:hidden}
+.invitation-gate.opening .invitation-stage{transform:scale(1.035);opacity:.86}
+body.invite-locked{overflow:hidden}
+@keyframes mfSealPulse{0%,100%{transform:scale(.96);opacity:.3}50%{transform:scale(1.08);opacity:.78}}
+@media(max-width:640px){
+  .invitation-stage{width:100vw;aspect-ratio:9/13}
+  .invitation-photo{object-fit:cover;object-position:center}
+  .invitation-fallback{width:91vw}
+  .invitation-seal{left:54%;top:51%}
+}
+@media(prefers-reduced-motion:reduce){
+  .invitation-seal::after{animation:none}.invitation-gate,.invitation-stage{transition:none}
+}
+
 </style>
 </head>
 <body>
+
+<div class="invitation-gate" id="invitationGate" aria-label="Invitation Morwane et Fatima">
+  <div class="invitation-stage" id="invitationStage">
+    <div class="invitation-fallback" aria-hidden="true"></div>
+    <img class="invitation-photo" id="invitationPhoto" src="invitation-envelope-olive.webp" alt="" aria-hidden="true">
+    <button class="invitation-seal" id="invitationSeal" type="button" aria-label="Ouvrir l’invitation">M&amp;F</button>
+  </div>
+</div>
+
 <header class="navbar" id="nav">
   <a class="brand" href="#top">M & F</a>
   <nav class="navlinks">
@@ -419,6 +502,39 @@ window.addEventListener('scroll',()=>document.getElementById('nav').classList.to
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 function handleRSVP(e){e.preventDefault();alert(document.documentElement.lang==='fr'?"Le design du RSVP est prêt. Nous connecterons l’envoi définitif avant la mise en ligne.":document.documentElement.lang==='ar'?"تصميم نموذج التأكيد جاهز. سيتم ربط الإرسال النهائي قبل نشر الموقع.":"The RSVP design is ready. We will connect the final submission before launch.")}
 setLang(localStorage.getItem('mf_lang')||'fr');
+
+(function(){
+  const gate=document.getElementById('invitationGate');
+  const stage=document.getElementById('invitationStage');
+  const seal=document.getElementById('invitationSeal');
+  const photo=document.getElementById('invitationPhoto');
+  if(!gate||!seal)return;
+
+  const hideGate=()=>{
+    gate.remove();
+    document.body.classList.remove('invite-locked');
+  };
+
+  if(sessionStorage.getItem('mf_invitation_opened')==='1'){
+    hideGate();
+    return;
+  }
+
+  document.body.classList.add('invite-locked');
+
+  if(photo){
+    photo.addEventListener('load',()=>stage&&stage.classList.add('has-image'),{once:true});
+    photo.addEventListener('error',()=>photo.remove(),{once:true});
+    if(photo.complete&&photo.naturalWidth>0) stage&&stage.classList.add('has-image');
+  }
+
+  seal.addEventListener('click',()=>{
+    sessionStorage.setItem('mf_invitation_opened','1');
+    gate.classList.add('opening');
+    setTimeout(hideGate,760);
+  },{once:true});
+})();
+
 </script>
 </body>
 </html>
